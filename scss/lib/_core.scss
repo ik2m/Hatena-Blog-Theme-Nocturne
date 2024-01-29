@@ -5,23 +5,34 @@ body {
     background-color: $background;
     line-height: 1.6;
 }
+
 a {
     color: $link;
+
     &:hover {
         color: $hover;
     }
+
     &.keyword {
         text-decoration: none;
         border-bottom: 1px dotted $border;
         color: $text;
     }
 }
-h1,h2,h3,h4,h5,h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $text-header;
     line-height: 1.3;
+
     a {
         color: $text-header;
         text-decoration: none;
+
         &:hover {
             color: $hover;
         }
@@ -42,12 +53,14 @@ h1,h2,h3,h4,h5,h6 {
 #footer {
     padding-left: 10px;
     padding-right: 10px;
+
     @media #{$mq-sm} {
         width: 720px;
         margin: auto;
         padding-left: 0;
         padding-right: 0;
     }
+
     @media #{$mq-md} {
         width: 940px;
     }
@@ -58,22 +71,27 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     @media #{$mq-sm} {
         flex-direction: row;
     }
 }
+
 #wrapper {
     @media #{$mq-sm} {
         width: 480px;
     }
+
     @media #{$mq-md} {
         width: 600px;
     }
 }
+
 #box2 {
     @media #{$mq-sm} {
         width: 200px;
     }
+
     @media #{$mq-md} {
         width: 300px;
     }
@@ -134,21 +152,26 @@ h1,h2,h3,h4,h5,h6 {
 #blog-title {
     margin: 2em 0;
     text-align: center;
+
     @media #{$mq-sm} {
         margin: 3em 0;
         text-align: left;
     }
 }
+
 #title {
     margin: 0;
     font-size: 1.5rem;
+
     @media #{$mq-md} {
         font-size: 1.7rem;
     }
+
     a {
         color: $text;
     }
 }
+
 #blog-description {
     font-weight: normal;
     font-size: .8rem;
@@ -160,11 +183,13 @@ h1,h2,h3,h4,h5,h6 {
     #blog-title {
         margin: 0 0 2em;
     }
+
     #blog-title-inner {
         display: flex;
         flex-direction: row;
         align-items: center;
     }
+
     #blog-title-content {
         margin-left: 10px;
         margin-right: 10px;
@@ -186,33 +211,41 @@ h1,h2,h3,h4,h5,h6 {
     position: relative;
     margin-bottom: 4em;
 }
+
 .entry-header {
     padding-bottom: 1em;
     margin-bottom: 2em;
     border-bottom: 1px solid $border;
     position: relative;
 }
+
 .date {
     margin-bottom: .5em;
     font-size: .9rem;
+
     a {
         color: $text-light;
         text-decoration: none;
+
         &:hover {
             text-decoration: underline;
         }
     }
 }
+
 .entry-title {
     margin: 0 0 .3em;
     font-size: 1.5rem;
+
     @media #{$mq-md} {
         font-size: 1.6rem;
     }
 }
+
 .categories {
     margin: .5em 0;
     font-size: .9rem;
+
     a {
         margin-right: .5em;
     }
@@ -227,11 +260,13 @@ h1,h2,h3,h4,h5,h6 {
 
 /* 記事内の書式 */
 .entry-content {
+
     img,
     video {
         max-width: 100%;
         height: auto;
     }
+
     h1,
     h2,
     h3,
@@ -240,44 +275,58 @@ h1,h2,h3,h4,h5,h6 {
     h6 {
         margin: 1em 0 0.8em 0;
     }
+
     h1 {
         font-size: 1.5rem;
+
         @media #{$mq-md} {
             font-size: 1.7rem;
         }
     }
+
     h2 {
         font-size: 1.4rem;
+
         @media #{$mq-md} {
             font-size: 1.5rem;
         }
     }
+
     h3 {
         font-size: 1.2rem;
+
         @media #{$mq-md} {
             font-size: 1.3rem;
         }
     }
+
     h4 {
         font-size: 1.1rem;
     }
+
     h5 {
         font-size: 1rem;
     }
+
     h6 {
         font-size: .9rem;
     }
+
     ul,
     ol,
     dd {
         margin: 0 0 1em 1.5em;
         padding: 0;
+
         li {
-            ul,ol {
+
+            ul,
+            ol {
                 margin-bottom: 0;
             }
         }
     }
+
     table {
         border-collapse: collapse;
         border-spacing: 0;
@@ -287,15 +336,18 @@ h1,h2,h3,h4,h5,h6 {
         overflow: auto;
         display: block;
         font-size: .8rem;
+
         @media #{$mq-md} {
             font-size: .9rem;
         }
     }
+
     table th,
     table td {
         border: 1px solid $border;
         padding: 5px 10px;
     }
+
     table th {
         background: $bg-light;
     }
@@ -304,17 +356,21 @@ h1,h2,h3,h4,h5,h6 {
         border: 1px solid $border;
         margin: 0 0 10px;
         padding: 20px;
+
         p:first-of-type {
             margin-top: 0;
         }
+
         p:last-of-type {
             margin-bottom: 0;
         }
     }
+
     pre,
     code {
         font-family: $font-family-monospace;
     }
+
     pre {
         background: $bg-light;
         border: none;
@@ -323,7 +379,8 @@ h1,h2,h3,h4,h5,h6 {
         line-height: 1.3;
         font-size: .8rem;
         padding: 10px;
-        & > code {
+
+        &>code {
             margin: 0;
             padding: 0;
             white-space: pre;
@@ -332,6 +389,7 @@ h1,h2,h3,h4,h5,h6 {
             font-family: $font-family-monospace;
         }
     }
+
     code {
         font-size: 90%;
         margin: 0 2px;
@@ -339,6 +397,7 @@ h1,h2,h3,h4,h5,h6 {
         background-color: $bg-light;
         border-radius: 3px;
     }
+
     hr {
         width: 50%;
         border: 0;
@@ -346,6 +405,7 @@ h1,h2,h3,h4,h5,h6 {
         border-top: 1px solid $border;
         margin: 2em auto;
     }
+
     .table-of-contents {
         padding: 1em 1em 1em 2em;
         margin: 1em 0;
@@ -359,9 +419,11 @@ h1,h2,h3,h4,h5,h6 {
         margin-bottom: 1em;
     }
 }
+
 .entry-footer-section {
     color: $text-light;
     font-size: .9rem;
+
     a {
         color: $text-light;
     }
@@ -370,27 +432,33 @@ h1,h2,h3,h4,h5,h6 {
 /* コメント */
 .comment-box {
     margin: 1em 0;
+
     .comment {
         list-style: none;
         margin: 0 0 15px 0;
         padding: 0;
         line-height: 1.7;
         font-size: .85rem;
+
         @media #{$mq-sm} {
             font-size: .9rem;
         }
     }
+
     .entry-comment {
         padding: 10px 0 10px 60px;
         border-bottom: 1px solid $border;
         position: relative;
+
         &:first-child {
             border-top: 1px solid $border;
         }
     }
+
     .read-more-comments {
         padding: 10px 0;
     }
+
     .hatena-id-icon {
         position: absolute;
         top: 10px;
@@ -400,27 +468,33 @@ h1,h2,h3,h4,h5,h6 {
         border-radius: 3px;
     }
 }
+
 .comment-user-name {
     margin: 0 0 .4em 0;
     font-weight: bold;
 }
+
 .comment-content {
     margin: 0 0 .4em 0;
     word-wrap: break-word;
     color: $text;
     font-size: .85rem;
+
     p {
         margin: 0 0 .6em 0;
     }
 }
+
 .comment-metadata {
     color: $text-light;
     margin: 0;
     font-size: .8rem;
+
     a {
         color: $text-light;
     }
 }
+
 .leave-comment-title {
     padding: .6em 1em;
     font-size: .85rem;
@@ -440,19 +514,23 @@ h1,h2,h3,h4,h5,h6 {
     box-sizing: border-box;
     margin-bottom: 3em;
     font-size: .85rem;
+
     @media #{$mq-sm} {
         font-size: .9rem;
     }
 }
+
 .hatena-module-title {
     margin-bottom: .6em;
     padding-bottom: .2em;
     border-bottom: 1px solid $border;
     font-size: 1rem;
     font-weight: bold;
+
     a {
         color: $text;
         text-decoration: none;
+
         &:hover {
             text-decoration: underline;
         }
@@ -465,11 +543,13 @@ h1,h2,h3,h4,h5,h6 {
         float: left;
         margin: 0 10px 10px 0;
     }
+
     .id {
         display: block;
         font-weight: bold;
         margin-bottom: .5em;
     }
+
     .profile-description {
         p {
             margin-top: 0;
@@ -482,25 +562,32 @@ h1,h2,h3,h4,h5,h6 {
     list-style: none;
     margin: 0;
     padding: 0;
+
     li {
         padding: .5em 0;
+
         &:last-child {
             padding-bottom: 0;
         }
+
         a {
             text-decoration: none;
+
             &:hover {
                 text-decoration: underline;
             }
         }
     }
+
     .urllist-category-link {
         font-size: .7rem;
         padding: .1em .3em;
     }
+
     .urllist-date-link a {
         color: $text-light;
     }
+
     .urllist-entry-body {
         margin-top: .3em;
     }
@@ -516,6 +603,7 @@ h1,h2,h3,h4,h5,h6 {
         display: flex;
         align-items: center;
     }
+
     .search-module-input {
         flex: 1 0;
         padding: 5px;
@@ -525,6 +613,7 @@ h1,h2,h3,h4,h5,h6 {
         outline: none;
         height: 20px;
     }
+
     .search-module-button {
         width: 24px;
         height: 24px;
@@ -537,6 +626,7 @@ h1,h2,h3,h4,h5,h6 {
         overflow: hidden;
         opacity: .5;
         cursor: pointer;
+
         &:hover {
             opacity: .85;
         }
@@ -551,6 +641,7 @@ h1,h2,h3,h4,h5,h6 {
             border-bottom: 1px solid $border;
             margin-bottom: .5em;
         }
+
         dd {
             margin-left: 0;
             margin-bottom: 2em;
@@ -562,35 +653,81 @@ h1,h2,h3,h4,h5,h6 {
 .archive-header-category {
     text-align: center;
 }
+
 .page-archive {
-    .archive-entry {
-        margin-bottom: 3em;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.3;
-    }
-    .entry-title {
-        margin: .3em auto;
-    }
-    .entry-thumb {
-        width: 80px;
-        height: 80px;
-        background-size: cover;
-        @media #{$mq-sm} {
-            width: 120px;
-            height: 120px;
+    .archive-entries {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .archive-entry {
+            background-color: $background;
+            position: relative;
+
+            margin: 0px;
+            line-height: 1.3;
+            width: 49%;
+            height: 480px;
         }
-    }
-    .entry-description {
-        margin: 0;
-        font-size: .85rem;
-        @media #{$mq-sm} {
-            font-size: .9rem;
+
+        .archive-entry-header {
+            position: absolute;
+            z-index: 1;
+
+
+            .entry-title {
+                margin: .3em auto;
+            }
+
+            .archive-date {
+                padding: 0.5em;
+
+                background-color: rgba(255, 255, 255, 0.8);
+
+                a {
+                    color: black;
+                }
+            }
         }
-    }
-    .social-buttons {
-        display: block;
-        margin-top: .3em;
+
+        .categories {
+            position: absolute;
+            z-index: 1;
+            right: 0%;
+        }
+
+        .entry-thumb {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+
+            // @media #{$mq-sm} {
+            //     width: 120px;
+            //     height: 120px;
+            // }
+        }
+
+
+        .archive-entry-body {
+            position: absolute;
+            bottom: 0%;
+            margin: 0.3em;
+        }
+
+        .entry-description {
+            display: none;
+            // font-size: .85rem;
+
+            // @media #{$mq-sm} {
+            //     font-size: .9rem;
+            // }
+        }
+
+        .social-buttons {
+            display: block;
+            margin-top: .3em;
+        }
     }
 }
 
@@ -602,9 +739,11 @@ h1,h2,h3,h4,h5,h6 {
     text-align: center;
     font-size: .8rem;
     color: $text-light;
+
     a {
         color: $text-light;
     }
+
     p {
         margin: .5em auto;
     }
