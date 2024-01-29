@@ -7,15 +7,17 @@ $font-family-monospace: 'Monaco', 'Consolas', 'Courier New', Courier, monospace,
 // Background color
 $background: #fff;
 $bg-light: #f5f5f5;
+$bg-dark: #202021;
 $bg-black: #000;
 
 // text color
 $text: #454545;
 $text-light: #999;
+$text-white: #fff;
 $text-header: #333;
 
 // link
-$link: #1487bd;
+$link: #454545;
 $hover: darken($link, 10%);
 
 // border
@@ -30,3 +32,4 @@ $mq-xs: "(max-width: 480px)";
 $mq-sm: "(min-width: 768px)";
 $mq-md: "(min-width: 992px)";
 $mq-lg: "(min-width: 1200px)";
+$mq-xl: "(min-width: 1400px)";
