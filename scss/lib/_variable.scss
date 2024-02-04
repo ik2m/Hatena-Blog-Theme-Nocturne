@@ -4,32 +4,37 @@
 $font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';
 $font-family-monospace: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
 
+
+
 // Background color
-$background: #fff;
+$background: #111;
 $bg-light: #f5f5f5;
 $bg-dark: #202021;
 $bg-black: #000;
+$bg-content: #111;
 
 // text color
-$text: #454545;
+$text: #999;
 $text-light: #999;
 $text-white: #fff;
-$text-header: #333;
+$text-header: #fff;
+$text-header-hover: darken($text-header, 10%);
 
 // link
-$link: #454545;
+$link: #eee;
 $hover: darken($link, 10%);
 
 // border
-$border: #000;
+$border: #fff;
 
 // button
 $btn: #fff;
 $btn-hover: #f5f5f5;
 
 // Media Queries
-$mq-xs: "(max-width: 480px)";
-$mq-sm: "(min-width: 768px)";
-$mq-md: "(min-width: 992px)";
-$mq-lg: "(min-width: 1200px)";
-$mq-xl: "(min-width: 1400px)";
+// $mq-xs: "(max-width: 576px)";
+$mq-sm: "(min-width: 576px)";
+$mq-md: "(min-width: 768px)";
+$mq-lg: "(min-width: 992px)";
+$mq-xl: "(min-width: 1200px)";
+$mq-xxl: "(min-width: 1400px)";

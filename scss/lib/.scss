@@ -4,7 +4,7 @@ body {
     color: $text;
     background-color: $background;
     line-height: 1.6;
-    font-size: 16px
+    font-size: 100%
 }
 
 a {
@@ -81,9 +81,6 @@ h6 {
 
 #wrapper {
     background-color: $bg-content;
-    border-radius: 16px;
-    padding: 1rem 4px;
-
     // @media #{$mq-md} {
     //     width: 600px;
     // }
@@ -221,14 +218,19 @@ h6 {
 
 /* パンくず（カテゴリー、記事ページで表示されます） */
 .breadcrumb {
-    font-size: .9rem;
+    font-size: .8rem;
+
 }
 
 /* entry */
 .entry {
     position: relative;
     padding: 0.3em;
+    border: 1px solid $border;
+    // box-sizing: border-box;
 }
+
+.entry-inner {}
 
 .entry-header {
     padding-bottom: 1em;
@@ -432,6 +434,8 @@ h6 {
 
     .entry-see-more {
         @include round-button;
+        display: block;
+        padding: auto;
         background-color: red;
     }
 }
