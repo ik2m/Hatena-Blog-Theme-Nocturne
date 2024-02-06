@@ -24,13 +24,13 @@ $text-white: #fff;
 $bg-wrapper: #111;
 $bg-category: $bg-light;
 $bg-asin: $background ;
-$quote-bar : #222;
+$quote-bar : #444;
 $bg-code : $bg-light;
 
 
 $bg-button :red;
 $bg-button-hover :lighten($bg-button, 10%);
-$text-button : $text-light;
+$text-button : white;
 $text-button-hover : lighten($text-button, 10%);
 
 $text-pager: $text-white;
@@ -50,6 +50,8 @@ $text-comment-content: $text;
 $text-comment-metadata: $text-light;
 $text-comment-metadata-hover: $text-light;
 
+$bg-table-header: $bg-light;
+
 $bg-footer: $bg-black;
 $text-footer: $text-light;
 $text-footer-link: $text-light;
@@ -60,6 +62,7 @@ $link-hover: darken($link, 10%);
 
 // border
 $border: #fff;
+$border-comment: #444;
 
 // button
 $btn: #fff;
