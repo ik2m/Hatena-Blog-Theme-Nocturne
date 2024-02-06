@@ -11,7 +11,7 @@ a {
     text-decoration: none;
 
     &:hover {
-        color: $hover;
+        color: $link-hover;
     }
 
     &.keyword {
@@ -80,7 +80,7 @@ h6 {
 }
 
 #wrapper {
-    background-color: $bg-content;
+    background-color: $bg-wrapper;
     border-radius: 16px;
     padding: 1rem 4px;
 
@@ -235,6 +235,7 @@ h6 {
 
 .entry-header {
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .date {
@@ -242,13 +243,13 @@ h6 {
     font-size: .65rem;
 
     a {
-        color: $text-light;
+        color: $text-date;
         text-decoration: none;
         padding: 0.2rem;
         border-radius: 4px;
 
         &:hover {
-            background-color: rgba(255, 255, 255, 0.1);
+            background-color: $bg-text-date-hover;
         }
     }
 }
@@ -270,7 +271,7 @@ h6 {
         text-decoration: none;
         margin-right: .5em;
         padding: .4rem;
-        background-color: $bg-light;
+        background-color: $bg-category;
     }
 }
 
@@ -397,7 +398,7 @@ h6 {
             content: "";
             width: 8px;
             height: 100%;
-            background-color: $quote;
+            background-color: $quote-bar;
             border-radius: 8px;
             position: absolute;
             top: 0;
@@ -409,7 +410,7 @@ h6 {
     .hatena-asin-detail {
         // border: 1px solid rgb(120, 120, 120);
         // box-shadow: 0 0 12px rgba(255, 0, 0, 0.5);
-        background-color: $background;
+        background-color: $bg-asin;
     }
 
     pre,
@@ -440,7 +441,7 @@ h6 {
         font-size: 90%;
         margin: 0 2px;
         padding: 0px 5px;
-        background-color: $bg-light;
+        background-color: $bg-code;
         border-radius: 3px;
     }
 
@@ -460,7 +461,7 @@ h6 {
 
     .entry-see-more {
         @include round-button;
-        background-color: red;
+        background-color: $bg-button;
     }
 }
 
@@ -472,7 +473,6 @@ h6 {
 }
 
 .entry-footer-section {
-    color: $text-light;
     font-size: .7rem;
 
     display: flex;
@@ -486,10 +486,6 @@ h6 {
     .entry-footer-time {}
 
     .entry-footer-subscribe {}
-
-    a {
-        color: $text-light;
-    }
 }
 
 /* コメント */
@@ -537,7 +533,7 @@ h6 {
 .comment-content {
     margin: 0 0 .4em 0;
     word-wrap: break-word;
-    color: $text;
+    color: $text-comment-content;
     font-size: .8rem;
 
     p {
@@ -546,12 +542,12 @@ h6 {
 }
 
 .comment-metadata {
-    color: $text-light;
+    color: $text-comment-metadata;
     margin: 0;
     font-size: .8rem;
 
     a {
-        color: $text-light;
+        color: $text-comment-metadata-hover;
     }
 }
 
@@ -562,11 +558,11 @@ h6 {
     display: inline-block;
 
     @include round-button;
-    background-color: $bg-black;
+    background-color: $bg-button;
 
     &:hover {
-        color: white;
-        background-color: red;
+        color: $text-button-hover;
+        background-color: $bg-button-hover;
     }
 }
 
@@ -584,18 +580,19 @@ h6 {
 .pager-next {
     padding: 0 0.2rem;
     border-radius: 4px;
+    background-color: $bg-pager;
 
     a {
         text-decoration: none;
-        color: $text-white;
+        color: $text-pager;
 
         &:hover {
-            color: $text-white;
+            color: $text-pager-hover;
         }
     }
 
     &:hover {
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: $bg-pager-hover;
     }
 }
 
@@ -614,7 +611,7 @@ h6 {
     font-weight: bold;
 
     a {
-        color: $text;
+        // color: $text;
         text-decoration: none;
 
         &:hover {
@@ -625,12 +622,12 @@ h6 {
 
 /* Profile module */
 .hatena-module-profile {
-    background-color: black;
+    background-color: $bg-hatena-module-profile;
 
-    color: $text-white;
+    color: $text-hatena-module-profile;
 
     a {
-        color: $text-white;
+        // color: $text-hatena-module-profile;
     }
 
     .hatena-module-body {
@@ -676,7 +673,11 @@ h6 {
 
             a {
                 @include round-button;
-                background-color: red;
+                background-color: $bg-button;
+
+                &:hover {
+                    background-color: $bg-button-hover;
+                }
             }
         }
     }
@@ -729,7 +730,7 @@ h6 {
     }
 
     .urllist-date-link a {
-        color: $text-light;
+        // color: $text-light;
     }
 
     .urllist-entry-body {
@@ -740,9 +741,8 @@ h6 {
 /* Search module */
 .hatena-module-search-box {
     .search-form {
-        border: 1px solid $border;
+        border: 1px solid black;
         background-color: white;
-        // border-radius: 3px;
         width: 100%;
         box-sizing: border-box;
         display: flex;
@@ -909,11 +909,11 @@ h6 {
     width: 100%;
     text-align: center;
     font-size: .8rem;
-    color: $text-light;
-    background-color: $bg-black;
+    color: $text-footer;
+    background-color: $bg-footer;
 
     a {
-        color: $text-light;
+        color: $text-footer-link;
     }
 
     p {
