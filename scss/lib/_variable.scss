@@ -1,7 +1,7 @@
 // Variables
 
 // Font
-$font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';
+$font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial','Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';
 $font-family-monospace: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
 
 // theme
@@ -22,8 +22,8 @@ $accent-dark: darken($accent, 10%);
 $accent-light: lighten($accent, 10%);
 
 // Background color
-$background: #fff;
-$bg-light: #f5f5f5;
+$background: $gray-very-light;
+$bg-light: $gray-w;
 
 // text color
 $text: $gray-very-dark;
@@ -38,8 +38,17 @@ $hover: darken($link, 10%);
     @return $n * 4px;
 }
 
+$radius-xs: 0.125rem;
+$radius-sm: 0.25rem;
+$radius-md: 0.375rem;
+$radius-lg: 0.5rem;
+$radius-xl: 0.75rem;
+$radius-2xl: 1rem;
+$radius-3xl: 1.5rem;
+$radius-4xl: 2rem;
+
 // border
-$border: #ddd;
+$border: $gray;
 
 // button
 $btn: #fff;
