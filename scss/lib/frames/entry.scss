@@ -1,0 +1,50 @@
+/* entry */
+.entry {
+    margin-bottom: spacing(10);
+    border: 1px solid $border;
+    border-radius: $radius-sm;
+    padding: spacing(2);
+
+    @media #{$mq-md} {
+        font-size: 1.6rem;
+    }
+}
+
+.entry-header {
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid $border;
+    position: relative;
+}
+.date {
+    margin-bottom: .5em;
+    font-size: .9rem;
+    a {
+        color: $text-light;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.entry-title {
+    margin: 0 0 .3em;
+    font-size: 1.5rem;
+    @media #{$mq-md} {
+        font-size: 1.6rem;
+    }
+}
+.categories {
+    margin: .5em 0;
+    font-size: .9rem;
+    a {
+        margin-right: .5em;
+    }
+}
+
+/* 「編集する」ボタン */
+.entry-header-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
