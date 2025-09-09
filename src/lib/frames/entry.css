@@ -1,50 +1,32 @@
 /* entry */
+/* entry */
 .entry {
-    margin-bottom: spacing(10);
-    border: 1px solid $border;
-    border-radius: $radius-sm;
-    padding: spacing(2);
-
-    @media #{$mq-md} {
-        font-size: 1.6rem;
-    }
+    @apply mb-10 border border-gray-200 rounded-sm p-2 md:text-[1.6rem];
 }
 
 .entry-header {
-    padding-bottom: 1em;
-    margin-bottom: 2em;
-    border-bottom: 1px solid $border;
-    position: relative;
+    @apply pb-4 mb-8 border-b border-gray-200 relative;
 }
+
 .date {
-    margin-bottom: .5em;
-    font-size: .9rem;
-    a {
-        color: $text-light;
-        text-decoration: none;
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+    @apply mb-2 text-sm;
 }
+.date a {
+    @apply text-gray-200 no-underline hover:underline;
+}
+
 .entry-title {
-    margin: 0 0 .3em;
-    font-size: 1.5rem;
-    @media #{$mq-md} {
-        font-size: 1.6rem;
-    }
+    @apply mb-1 text-[1.5rem] md:text-[1.6rem];
 }
+
 .categories {
-    margin: .5em 0;
-    font-size: .9rem;
-    a {
-        margin-right: .5em;
-    }
+    @apply my-2 text-sm;
+}
+.categories a {
+    @apply mr-2;
 }
 
 /* 「編集する」ボタン */
 .entry-header-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
+    @apply absolute top-0 right-0;
 }
