@@ -1,59 +1,50 @@
 /* コメント */
 .comment-box {
-    margin: 1em 0;
-    .comment {
-        list-style: none;
-        margin: 0 0 15px 0;
-        padding: 0;
-        line-height: 1.7;
-        font-size: .85rem;
-        @media #{$mq-sm} {
-            font-size: .9rem;
-        }
-    }
-    .entry-comment {
-        padding: 10px 0 10px 60px;
-        border-bottom: 1px solid $border;
-        position: relative;
-        &:first-child {
-            border-top: 1px solid $border;
-        }
-    }
-    .read-more-comments {
-        padding: 10px 0;
-    }
-    .hatena-id-icon {
-        position: absolute;
-        top: 10px;
-        left: 0;
-        width: 50px !important;
-        height: 50px !important;
-        border-radius: 3px;
-    }
+    @apply my-4;
 }
+
+.comment-box .comment {
+    @apply list-none m-0 mb-3.5 p-0 leading-[1.7] text-[0.85rem] sm:text-[0.9rem];
+}
+
+.comment-box .entry-comment {
+    @apply py-2.5 pl-15 border-b border-gray-200 relative;
+}
+
+.comment-box .entry-comment:first-child {
+    @apply border-t border-gray-200;
+}
+
+.comment-box .read-more-comments {
+    @apply py-2.5;
+}
+
+.comment-box .hatena-id-icon {
+    @apply absolute top-2.5 left-0 rounded-sm;
+    width: 50px !important;
+    height: 50px !important;
+}
+
 .comment-user-name {
-    margin: 0 0 .4em 0;
-    font-weight: bold;
+    @apply m-0 mb-1.5 font-bold;
 }
+
 .comment-content {
-    margin: 0 0 .4em 0;
-    word-wrap: break-word;
-    color: $text;
-    font-size: .85rem;
-    p {
-        margin: 0 0 .6em 0;
-    }
+    @apply m-0 mb-1.5 break-words text-gray-900 text-[0.85rem];
 }
+
+.comment-content p {
+    @apply m-0 mb-2.5;
+}
+
 .comment-metadata {
-    color: $text-light;
-    margin: 0;
-    font-size: .8rem;
-    a {
-        color: $text-light;
-    }
+    @apply text-gray-200 m-0 text-[0.8rem];
 }
+
+.comment-metadata a {
+    @apply text-gray-200;
+}
+
 .leave-comment-title {
-    padding: .6em 1em;
-    font-size: .85rem;
-    border: 1px solid $border;
+    @apply py-2.5 px-4 text-[0.85rem] border border-gray-200;
 }

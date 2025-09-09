@@ -1,7 +1,4 @@
 /* Pager */
-
 .pager {
-    margin: 2em 0;
-    display: flex;
-    justify-content: space-between;
+    @apply my-8 flex justify-between;
 }

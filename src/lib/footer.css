@@ -1,14 +1,12 @@
 /* footer */
 #footer {
-    margin-top: 2em;
-    padding-bottom: 2rem;
-    text-align: center;
-    font-size: .8rem;
-    color: $text-light;
+    @apply mt-8 pb-8 text-center text-[0.8rem] text-gray-200;
+
     a {
-        color: $text-light;
+        @apply text-gray-200;
     }
+
     p {
-        margin: .5em auto;
+        @apply my-2 mx-auto;
     }
 }
