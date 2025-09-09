@@ -1,41 +1,18 @@
 /* container */
 #container,
 #footer {
-    padding-left: spacing(2);
-    padding-right: spacing(2);
-    @media #{$mq-sm} {
-        width: 720px;
-        margin: auto;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    @media #{$mq-md} {
-        width: 940px;
-    }
+    @apply px-2 sm:w-[720px] sm:mx-auto sm:px-0 md:w-[940px];
 }
 
 /* 2カラムレイアウト */
 #content-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @media #{$mq-sm} {
-        flex-direction: row;
-    }
+    @apply flex flex-col justify-between sm:flex-row;
 }
+
 #wrapper {
-    @media #{$mq-sm} {
-        width: 480px;
-    }
-    @media #{$mq-md} {
-        width: 600px;
-    }
+    @apply sm:w-[480px] md:w-[600px];
 }
+
 #box2 {
-    @media #{$mq-sm} {
-        width: 200px;
-    }
-    @media #{$mq-md} {
-        width: 300px;
-    }
+    @apply sm:w-[200px] md:w-[300px];
 }

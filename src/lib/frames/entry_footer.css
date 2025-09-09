@@ -1,13 +1,12 @@
 /* 記事下 */
-.entry-footer {
-    .social-buttons {
-        margin-bottom: 1em;
-    }
+.entry-footer .social-buttons {
+    @apply mb-4;
 }
+
 .entry-footer-section {
-    color: $text-light;
-    font-size: .9rem;
-    a {
-        color: $text-light;
-    }
+    @apply text-gray-200 text-sm;
+}
+
+.entry-footer-section a {
+    @apply text-gray-200;
 }
