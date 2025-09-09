@@ -1,40 +1,29 @@
 /* ヘッダ */
 #blog-title {
-    margin: 2em 0;
-    text-align: center;
-    @media #{$mq-sm} {
-        margin: 3em 0;
-        text-align: left;
-    }
+    @apply my-8 text-center sm:my-12 sm:text-left;
 }
+
 #title {
-    margin: 0;
-    font-size: 1.5rem;
-    @media #{$mq-md} {
-        font-size: 1.7rem;
-    }
-    a {
-        color: $text;
-    }
+    @apply m-0 text-[1.5rem] md:text-[1.7rem];
 }
+
+#title a {
+    @apply text-gray-900;
+}
+
 #blog-description {
-    font-weight: normal;
-    font-size: .8rem;
-    margin: 1em 0 0;
+    @apply font-normal text-[0.8rem] mt-4 mb-0;
 }
 
 /* ヘッダ画像を設定したとき */
-.header-image-enable {
-    #blog-title {
-        margin: 0 0 2em;
-    }
-    #blog-title-inner {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-    #blog-title-content {
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+.header-image-enable #blog-title {
+    @apply my-0 mb-8;
+}
+
+.header-image-enable #blog-title-inner {
+    @apply flex flex-row items-center;
+}
+
+.header-image-enable #blog-title-content {
+    @apply mx-2.5;
 }

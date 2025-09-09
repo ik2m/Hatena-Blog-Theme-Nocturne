@@ -1,4 +1,4 @@
 /* パンくず（カテゴリー、記事ページで表示されます） */
 .breadcrumb {
-    font-size: .9rem;
+    @apply text-sm;
 }
