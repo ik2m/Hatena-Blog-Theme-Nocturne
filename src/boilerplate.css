@@ -20,12 +20,12 @@
 
 /*@import "./lib/_variable";*/
 @import "./lib/_core.css";
-@import "./lib/frames/entry.css";
-@import "./lib/frames/entry_footer.css";
-@import "./lib/frames/container.css";
-@import "./lib/frames/hatena_module.css";
-@import "./lib/blog_title.css";
-@import "./lib/breadcrumb.css";
-@import "./lib/comment.css";
-@import "./lib/entry_content.css";
-@import "./lib/pager.css";
+@import "./lib/main/entry.css";
+@import "./lib/main/entry_footer.css";
+@import "./lib/container.css";
+@import "./lib/side/hatena_module.css";
+@import "./lib/header/blog_title.css";
+@import "./lib/header/breadcrumb.css";
+@import "./lib/main/comment.css";
+@import "./lib/main/entry_content.css";
+@import "./lib/main/pager.css";
