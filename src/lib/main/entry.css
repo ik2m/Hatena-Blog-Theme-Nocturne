@@ -1,5 +1,4 @@
 /* entry */
-/* entry */
 .entry {
     @apply mb-10 border border-gray-200 rounded-sm p-2 md:text-[1.6rem];
 }
