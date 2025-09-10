@@ -4,26 +4,25 @@
 }
 
 #title {
-    @apply m-0 text-[1.5rem] md:text-[1.7rem];
-}
-
-#title a {
-    @apply text-gray-900;
+    @apply m-0 text-2xl md:text-3xl text-center;
+    a {
+        @apply text-gray-900;
+    }
 }
 
 #blog-description {
-    @apply font-normal text-[0.8rem] mt-4 mb-0;
+    @apply font-normal text-sm mt-4 mb-0 text-center;
 }
 
 /* ヘッダ画像を設定したとき */
-.header-image-enable #blog-title {
-    @apply my-0 mb-8;
-}
-
-.header-image-enable #blog-title-inner {
-    @apply flex flex-row items-center;
-}
-
-.header-image-enable #blog-title-content {
-    @apply mx-2.5;
+.header-image-enable {
+    #blog-title {
+        @apply my-0 mb-8;
+    }
+    #blog-title-inner {
+        @apply flex flex-row items-center;
+    }
+    #blog-title-content {
+        @apply mx-2.5;
+    }
 }

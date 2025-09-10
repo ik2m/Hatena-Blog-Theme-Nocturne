@@ -7,22 +7,22 @@
     @apply pb-4 mb-8 border-b border-gray-200 relative;
 }
 
-.date {
+.entry-date.date {
     @apply mb-2 text-sm;
-}
-.date a {
-    @apply text-gray-200 no-underline hover:underline;
+    a {
+        @apply text-gray-500 no-underline hover:underline;
+    }
 }
 
 .entry-title {
     @apply mb-1 text-[1.5rem] md:text-[1.6rem];
 }
 
-.categories {
+.entry-categories.categories {
     @apply my-2 text-sm;
-}
-.categories a {
-    @apply mr-2;
+    a {
+        @apply mr-2;
+    }
 }
 
 /* 「編集する」ボタン */
