@@ -93,7 +93,7 @@
         }
 
         cite {
-            @apply block text-right text-gray-500;
+            @apply block text-right text-gray-500 mt-1;
         }
     }
 
