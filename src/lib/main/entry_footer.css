@@ -1,9 +1,9 @@
 /* 記事下 */
 .entry-footer {
     .entry-footer-section {
-        @apply text-gray-600 text-xs mb-2 flex justify-between gap-2 flex-wrap;
+        @apply text-gray-600 text-xs mb-2 flex justify-between gap-2 flex-wrap items-center;
         .entry-footer-time {
-            @apply flex-grow;
+            @apply flex-grow font-bold;
         }
 
         .entry-footer-subscribe {
