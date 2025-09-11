@@ -1,6 +1,14 @@
 /* footer */
 #footer {
-    @apply mt-8 pb-8 text-center text-[0.8rem] text-gray-200;
+    @apply py-8 text-center text-xs text-gray-200 bg-primary-light;
+
+    @apply bg-gradient-to-tr from-primary from-[0\%] via-primary via-[50\%] to-primary-light to-[100\%];
+
+    .footer-address {
+        img {
+            @apply inline-block;
+        }
+    }
 
     a {
         @apply text-gray-200;
