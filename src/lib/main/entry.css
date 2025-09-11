@@ -1,31 +1,39 @@
 /* entry */
 .entry {
     @apply mb-10 border border-gray-200 rounded-sm p-2 md:text-[1.6rem];
-}
 
-.entry-header {
-    @apply pb-4 mb-8 border-b border-gray-200 relative;
-}
-
-.entry-date.date {
-    @apply mb-2 text-sm;
-    a {
-        @apply text-gray-500 no-underline hover:underline;
+    .entry-header {
+        @apply pb-4 mb-8 border-b border-gray-200 relative;
     }
-}
 
-.entry-title {
-    @apply mb-1 text-[1.5rem] md:text-[1.6rem];
-}
+    .entry-date.date {
+        @apply mb-2 text-sm;
+        a {
+            @apply text-gray-800 no-underline hover:underline;
+        }
 
-.entry-categories.categories {
-    @apply my-2 text-sm;
-    a {
-        @apply mr-2;
+        .date-last-updated {
+            @apply text-gray-500;
+            svg {
+                @apply inline-block;
+            }
+        }
     }
-}
 
-/* 「編集する」ボタン */
-.entry-header-menu {
-    @apply absolute top-0 right-0;
+    .entry-title {
+        @apply mb-1 text-[1.5rem] md:text-[1.6rem];
+    }
+
+    .entry-categories.categories {
+        @apply my-2 text-sm flex gap-1;
+        a {
+            @apply text-white bg-primary-light rounded-xs px-2 py-0.5;
+        }
+    }
+
+    /* 「編集する」ボタン */
+    .entry-header-menu {
+        @apply absolute top-0 right-0 shadow px-2 py-0.5 bg-primary text-white rounded-xs;
+    }
+
 }
