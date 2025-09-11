@@ -1,4 +1,7 @@
 /* Pager */
 .pager {
-    @apply my-8 flex justify-between;
+    @apply my-8 flex justify-around;
+    a {
+        @apply text-gray-400;
+    }
 }
