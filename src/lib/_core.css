@@ -3,21 +3,21 @@ body {
     @apply font-sans text-gray-900 bg-white leading-relaxed;
 }
 
-a {
-    @apply text-blue-600 hover:text-blue-800;
-}
+/*a {*/
+/*    @apply text-blue-600 hover:text-blue-800;*/
+/*}*/
 
-a.keyword {
-    @apply no-underline border-b border-dotted border-gray-200 text-gray-900;
-}
+/*a.keyword {*/
+/*    @apply no-underline border-b border-dotted border-gray-200 text-gray-900;*/
+/*}*/
 
-h1, h2, h3, h4, h5, h6 {
-    @apply text-gray-800 leading-snug;
-}
+/*h1, h2, h3, h4, h5, h6 {*/
+/*    @apply text-gray-800 leading-snug;*/
+/*}*/
 
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    @apply text-gray-800 no-underline hover:text-blue-800;
-}
+/*h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {*/
+/*    @apply text-gray-800 no-underline hover:text-blue-800;*/
+/*}*/
 
 /* タイトル下HTML */
 #top-editarea {
