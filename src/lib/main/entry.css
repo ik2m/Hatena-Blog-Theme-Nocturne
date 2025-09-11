@@ -35,5 +35,4 @@
     .entry-header-menu {
         @apply absolute top-0 right-0 shadow px-2 py-0.5 bg-primary text-white rounded-xs;
     }
-
 }
