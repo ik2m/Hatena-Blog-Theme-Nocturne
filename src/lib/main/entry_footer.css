@@ -1,12 +1,12 @@
 /* 記事下 */
-.entry-footer .social-buttons {
-    @apply mb-4;
-}
-
-.entry-footer-section {
-    @apply text-gray-200 text-sm;
-}
-
-.entry-footer-section a {
-    @apply text-gray-200;
+.entry-footer {
+    .social-buttons {
+        @apply mb-4;
+    }
+    .entry-footer-section {
+        @apply text-gray-600 text-xs mb-2;
+        a {
+            @apply text-gray-600;
+        }
+    }
 }
