@@ -1,5 +1,7 @@
 /* 記事内の書式 */
 .entry-content {
+    @apply text-base leading-snug text-gray-800;
+
     img,
     video {
         @apply max-w-full h-auto;
@@ -15,27 +17,30 @@
     }
 
     h1 {
-        @apply text-[1.5rem] md:text-[1.7rem];
+        @apply text-4xl md:text-5xl;
     }
 
     h2 {
-        @apply text-[1.4rem] md:text-[1.5rem];
+        @apply text-3xl md:text-4xl;
     }
 
+    /** 大見出し */
     h3 {
-        @apply text-[1.2rem] md:text-[1.3rem];
+        @apply text-2xl md:text-3xl;
     }
 
+    /** 中見出し */
     h4 {
-        @apply text-[1.1rem];
+        @apply text-xl;
     }
 
+    /** 小見出し */
     h5 {
-        @apply text-[1rem];
+        @apply text-lg
     }
 
     h6 {
-        @apply text-[0.9rem];
+        @apply text-lg;
     }
 
     ul,
@@ -45,6 +50,7 @@
     }
 
     li {
+        @apply list-disc;
         ul,
         ol {
             @apply mb-0;
@@ -56,7 +62,7 @@
 
         th,
         td {
-            @apply border border-gray-200 px-2.5 py-1.5;
+            @apply border border-gray-300 px-2.5 py-1.5;
         }
 
         th {
@@ -64,6 +70,7 @@
         }
     }
 
+    /* TODO: */
     blockquote {
         @apply border border-gray-200 mb-2.5 p-5;
 
@@ -82,7 +89,7 @@
     }
 
     pre {
-        @apply bg-gray-100 border-0 whitespace-pre-wrap overflow-auto leading-snug text-[0.8rem] p-2.5;
+        @apply bg-gray-900 border-0 whitespace-pre-wrap overflow-auto leading-snug text-[0.8rem] p-2.5;
 
         > code {
             @apply m-0 p-0 whitespace-pre border-0 bg-transparent font-mono;
