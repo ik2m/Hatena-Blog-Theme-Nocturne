@@ -25,7 +25,7 @@
     }
 
     .entry-categories.categories {
-        @apply my-2 text-sm flex gap-1;
+        @apply my-2 text-sm flex gap-1 flex-wrap;
         a {
             @apply text-white bg-primary-light rounded-xs px-2 py-0.5;
         }
@@ -34,5 +34,10 @@
     /* 「編集する」ボタン */
     .entry-header-menu {
         @apply absolute top-0 right-0 shadow px-2 py-0.5 bg-primary text-white rounded-xs;
+    }
+
+    .entry-see-more {
+        @apply my-4 text-base font-bold py-1 px-6 text-primary border w-fit text-center rounded-full block mx-auto no-underline;
+        @apply hover:bg-primary hover:text-white transition-all;
     }
 }
