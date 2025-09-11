@@ -1,50 +1,48 @@
 /* コメント */
 .comment-box {
-    @apply my-4;
-}
+    @apply my-4 flex flex-col;
+    .comment {
+        @apply list-none m-0 mb-3.5 p-0 leading-[1.7] text-[0.85rem] sm:text-[0.9rem];
 
-.comment-box .comment {
-    @apply list-none m-0 mb-3.5 p-0 leading-[1.7] text-[0.85rem] sm:text-[0.9rem];
-}
+        .entry-comment {
+            @apply py-2.5 pl-15 border-b border-gray-200 relative;
 
-.comment-box .entry-comment {
-    @apply py-2.5 pl-15 border-b border-gray-200 relative;
-}
+            .comment-user-name {
+                @apply m-0 mb-1.5 font-bold text-gray-700;
 
-.comment-box .entry-comment:first-child {
-    @apply border-t border-gray-200;
-}
+                .hatena-id-icon {
+                    @apply absolute top-2.5 left-0 rounded-full;
+                    width: 48px !important;
+                    height: 48px !important;
+                }
+            }
 
-.comment-box .read-more-comments {
-    @apply py-2.5;
-}
+            .comment-content {
+                @apply m-0 mb-1.5 break-words text-gray-700 text-[0.85rem];
+                p {
+                    @apply m-0 mb-2.5;
+                }
+            }
 
-.comment-box .hatena-id-icon {
-    @apply absolute top-2.5 left-0 rounded-sm;
-    width: 50px !important;
-    height: 50px !important;
-}
+            .comment-metadata {
+                @apply text-gray-400 text-xs flex items-end gap-1 justify-between;
+                time {
+                    @apply text-gray-400 order-2;
+                }
+            }
+        }
 
-.comment-user-name {
-    @apply m-0 mb-1.5 font-bold;
-}
+        .entry-comment:first-child {
+            @apply border-t border-gray-200;
+        }
 
-.comment-content {
-    @apply m-0 mb-1.5 break-words text-gray-900 text-[0.85rem];
-}
+        .read-more-comments {
+            @apply py-2.5;
+        }
+    }
 
-.comment-content p {
-    @apply m-0 mb-2.5;
-}
-
-.comment-metadata {
-    @apply text-gray-200 m-0 text-[0.8rem];
-}
-
-.comment-metadata a {
-    @apply text-gray-200;
-}
-
-.leave-comment-title {
-    @apply py-2.5 px-4 text-[0.85rem] border border-gray-200;
+    /* 「コメントを書く」ボタン */
+    .leave-comment-title {
+        @apply w-fit self-end text-xs text-gray-600 py-2.5 px-4 border border-gray-200 rounded hover:bg-gray-200 transition-all ;
+    }
 }
