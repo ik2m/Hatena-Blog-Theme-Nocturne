@@ -1,6 +1,6 @@
 /* コメント */
 .comment-box {
-    @apply my-4 flex flex-col;
+    @apply my-4;
     .comment {
         @apply list-none m-0 mb-3.5 p-0 leading-[1.7] text-[0.85rem] sm:text-[0.9rem];
 
@@ -43,6 +43,6 @@
 
     /* 「コメントを書く」ボタン */
     .leave-comment-title {
-        @apply w-fit self-end text-xs text-gray-600 py-2.5 px-4 border border-gray-200 rounded hover:bg-gray-200 transition-all ;
+        @apply block ml-auto w-fit text-xs text-gray-600 py-2.5 px-4 border border-gray-200 rounded hover:bg-gray-200 transition-all ;
     }
 }
