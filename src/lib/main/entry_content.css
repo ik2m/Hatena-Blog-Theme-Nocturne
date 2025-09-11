@@ -7,6 +7,10 @@
         @apply max-w-full h-auto;
     }
 
+    a {
+        @apply underline underline-offset-1;
+    }
+
     h1,
     h2,
     h3,
