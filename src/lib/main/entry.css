@@ -1,19 +1,19 @@
 /* entry */
 .entry {
-    @apply mb-10 border border-gray-200 rounded-sm p-2 md:text-[1.6rem];
+    @apply mb-10 rounded-sm p-2 md:text-[1.6rem];
 
     .entry-header {
         @apply pb-4 mb-8 border-b border-gray-200 relative;
     }
 
     .entry-date.date {
-        @apply mb-2 text-sm;
+        @apply mb-2 text-xs font-bold flex gap-2;
         a {
-            @apply text-gray-800 no-underline hover:underline;
+            @apply text-gray-700 no-underline;
         }
 
         .date-last-updated {
-            @apply text-gray-500;
+            @apply text-gray-500 flex items-center gap-1 ml-0;
             svg {
                 @apply inline-block;
             }
@@ -21,7 +21,7 @@
     }
 
     .entry-title {
-        @apply mb-1 text-[1.5rem] md:text-[1.6rem];
+        @apply mb-1 text-2xl md:text-3xl text-gray-700;
     }
 
     .entry-categories.categories {
