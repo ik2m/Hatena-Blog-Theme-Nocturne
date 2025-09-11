@@ -69,7 +69,7 @@ body {
 
 .page-archive {
     .archive-entries {
-        @apply grid grid-cols-1 sm:grid-cols-2 gap-1;
+        @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-1;
 
         .archive-entry {
 
@@ -96,7 +96,7 @@ body {
             }
 
             .entry-description {
-                @apply m-0 text-xs;
+                @apply m-0 text-xs line-clamp-3;
             }
 
             .archive-entry-tags {
