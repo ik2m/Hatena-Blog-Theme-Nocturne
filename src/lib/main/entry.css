@@ -1,9 +1,9 @@
 /* entry */
 .entry {
-    @apply mb-20 rounded-sm p-2 md:text-[1.6rem];
+  @apply mb-20 rounded-sm p-2 md:text-[1.6rem];
 
-    .entry-header {
-        @apply pb-4 mb-4 relative;
+  .entry-header {
+    @apply relative mb-4 pb-4;
 
     .entry-date {
       @apply mb-2 flex gap-2 text-xs font-bold;
@@ -19,9 +19,9 @@
       }
     }
 
-        .entry-title {
-            @apply mb-1 text-2xl text-gray-700;
-        }
+    .entry-title {
+      @apply mb-1 text-2xl text-gray-700;
+    }
 
     .entry-categories {
       @apply flex flex-wrap gap-1 text-sm;

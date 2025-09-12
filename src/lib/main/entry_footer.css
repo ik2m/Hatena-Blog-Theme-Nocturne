@@ -11,11 +11,11 @@
     }
   }
 
-    .social-buttons {
-        @apply mb-4 flex gap-1 justify-center;
-    }
+  .social-buttons {
+    @apply mb-4 flex justify-center gap-1;
+  }
 
-    .google-afc-image {
-        @apply text-center;
-    }
+  .google-afc-image {
+    @apply text-center;
+  }
 }
