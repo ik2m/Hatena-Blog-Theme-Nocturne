@@ -20,7 +20,7 @@
     }
 
     .entry-title {
-      @apply mb-1 text-2xl text-gray-700;
+      @apply mb-1 text-2xl font-bold text-gray-700;
     }
 
     .entry-categories {
@@ -37,8 +37,9 @@
     @apply hover:bg-accent transition-all;
   }
 
+  /* 「続きを読む」ボタン */
   .entry-see-more {
-    @apply text-primary mx-auto my-4 block w-fit rounded-full border px-6 py-1 text-center text-base font-bold no-underline;
+    @apply text-primary mx-auto my-8 block w-fit rounded-full border px-6 py-1 text-center text-base font-bold no-underline;
     @apply hover:bg-primary transition-all hover:text-white;
   }
 }
