@@ -1,7 +1,6 @@
 /* ヘッダ */
 #blog-title {
-  @apply py-8 text-center font-serif;
-  @apply md:my-12 md:text-left;
+  @apply py-8 text-center font-serif my-12;
 
   #title {
     @apply m-0 text-2xl md:text-3xl;
