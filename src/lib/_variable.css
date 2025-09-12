@@ -1,61 +1,25 @@
-/*// Variables*/
+@theme {
+    --font-sans:
+            "Helvetica Neue", "Helvetica", Arial, "Noto Sans JP",
+            "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+    --font-serif:
+            "Times New Roman", Times, Georgia, "Noto Serif JP", "Hiragino Mincho ProN",
+            "Hiragino Mincho", "MS PMincho", "MS Mincho", serif;
+    --font-mono:
+            "Monaco", "Consolas", "Courier New", Courier, monospace, sans-serif;
 
-/*// Font*/
-/*$font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial','Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';*/
-/*$font-family-monospace: 'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;*/
+    --color-basew: #fff;
+    --color-white-dark: #cccdd8;
 
-/*// theme*/
-/*$gray-b: #1a1a1a;*/
-/*$gray-very-dark: #333333;*/
-/*$gray-dark: #666666; //gray-600*/
-/*$gray: #767676; //gray-536*/
-/*$gray-light: #949494;//gray-420*/
-/*$gray-very-light: #CCCCCC;*/
-/*$gray-w: #F2F2F2;*/
+    --color-baseB: #0c0c0c;
+    --color-black-light: #252525;
 
-/*$primary: #1928f0;*/
-/*$primay-dark: darken($primary, 10%);*/
-/*$primay-light: lighten($primary, 10%);*/
+    --color-primary-light: #2870bd;
+    --color-primary: #192245;
+    /*#1c38a6;*/
+    /*#3050c2;*/
+    --color-primary-dark: #10127b;
+    /*#7397a6;*/
 
-/*$accent: #840200;*/
-/*$accent-dark: darken($accent, 10%);*/
-/*$accent-light: lighten($accent, 10%);*/
-
-/*// Background color*/
-/*$background: $gray-very-light;*/
-/*$bg-light: $gray-w;*/
-
-/*// text color*/
-/*$text: $gray-very-dark;*/
-/*$color-gray-200: $gray;*/
-/*$text-header: $gray-very-dark;*/
-
-/*// link*/
-/*$link: $accent-dark;*/
-/*$hover: darken($link, 10%);*/
-
-/*@function spacing($n) {*/
-/*    @return $n * 4px;*/
-/*}*/
-
-/*$radius-xs: 0.125rem;*/
-/*$radius-sm: 0.25rem;*/
-/*$radius-md: 0.375rem;*/
-/*$radius-lg: 0.5rem;*/
-/*$radius-xl: 0.75rem;*/
-/*$radius-2xl: 1rem;*/
-/*$radius-3xl: 1.5rem;*/
-/*$radius-4xl: 2rem;*/
-
-/*// border*/
-/*$color-gray-200: $gray;*/
-
-/*// button*/
-/*$btn: #fff;*/
-/*$btn-hover: #f5f5f5;*/
-
-/*// Media Queries*/
-/*$mq-xs: "(max-width: 480px)";*/
-/*$mq-sm: "(min-width: 768px)";*/
-/*$mq-md: "(min-width: 992px)";*/
-/*$mq-lg: "(min-width: 1200px)";*/
+    --color-accent: #f92706;
+}
