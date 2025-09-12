@@ -19,9 +19,11 @@
 
 @theme {
   --font-sans:
-    "Helvetica Neue", "Helvetica", Arial, "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Hiragino Sans",
-    Meiryo, sans-serif;
-  /*--font-serif: */
+    "Helvetica Neue", "Helvetica", Arial, "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  --font-serif:
+    "Times New Roman", Times, Georgia, "Noto Serif JP", "Hiragino Mincho ProN",
+    "Hiragino Mincho", "MS PMincho", "MS Mincho", serif;
   --font-mono:
     "Monaco", "Consolas", "Courier New", Courier, monospace, sans-serif;
 
