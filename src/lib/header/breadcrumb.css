@@ -1,10 +1,10 @@
 /* パンくず（カテゴリー、記事ページで表示されます） */
 .breadcrumb {
-    @apply text-sm;
-    .breadcrumb-gt {
-        @apply text-gray-500/60;
-    }
-    a {
-        @apply  text-black-light;
-    }
+  @apply text-sm;
+  .breadcrumb-gt {
+    @apply text-gray-500/60;
+  }
+  a {
+    @apply text-black-light;
+  }
 }

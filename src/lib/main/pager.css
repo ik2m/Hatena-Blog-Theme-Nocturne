@@ -1,8 +1,9 @@
 /* Pager */
 .pager {
-    @apply my-8 flex justify-around text-base gap-2;
-    .pager-next, .pager-prev {
-        @apply px-1.5 py-1 rounded-sm truncate text-gray-700;
-        @apply hover:bg-gray-200/80 transition-colors;
-    }
+  @apply my-8 flex justify-around gap-2 text-base;
+  .pager-next,
+  .pager-prev {
+    @apply truncate rounded-sm px-1.5 py-1 text-gray-700;
+    @apply transition-colors hover:bg-gray-200/80;
+  }
 }

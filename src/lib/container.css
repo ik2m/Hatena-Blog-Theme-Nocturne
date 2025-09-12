@@ -1,18 +1,18 @@
 /* container */
 #container,
 #footer {
-    @apply px-2 sm:w-[720px] sm:mx-auto sm:px-0 md:w-[940px];
+  @apply px-2 sm:mx-auto sm:w-[720px] sm:px-0 md:w-[940px];
 }
 
 /* 2カラムレイアウト */
 #content-inner {
-    @apply flex flex-col justify-between sm:flex-row;
+  @apply flex flex-col justify-between sm:flex-row;
 }
 
 #wrapper {
-    @apply sm:w-[480px] md:w-[600px];
+  @apply sm:w-[480px] md:w-[600px];
 }
 
 #box2 {
-    @apply sm:w-[200px] md:w-[300px];
+  @apply sm:w-[200px] md:w-[300px];
 }

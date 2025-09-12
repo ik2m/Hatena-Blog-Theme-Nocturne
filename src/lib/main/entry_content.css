@@ -1,124 +1,124 @@
 /* 記事内の書式 */
 .entry-content {
-    @apply text-sm text-gray-700;
+  @apply text-sm text-gray-700;
 
-    img,
-    video {
-        @apply max-w-full h-auto;
-    }
+  img,
+  video {
+    @apply h-auto max-w-full;
+  }
 
-    a {
-        @apply underline underline-offset-2;
-    }
+  a {
+    @apply underline underline-offset-2;
+  }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        @apply mt-4 mb-3.5;
-    }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply mt-4 mb-3.5;
+  }
 
-    h1 {
-        @apply text-4xl md:text-5xl;
-    }
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
 
-    h2 {
-        @apply text-3xl md:text-4xl;
-    }
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
 
-    /** 大見出し */
-    h3 {
-        @apply text-2xl md:text-3xl;
-    }
+  /** 大見出し */
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
 
-    /** 中見出し */
-    h4 {
-        @apply text-xl;
-    }
+  /** 中見出し */
+  h4 {
+    @apply text-xl;
+  }
 
-    /** 小見出し */
-    h5 {
-        @apply text-lg
-    }
+  /** 小見出し */
+  h5 {
+    @apply text-lg;
+  }
 
-    h6 {
-        @apply text-lg;
-    }
+  h6 {
+    @apply text-lg;
+  }
 
+  ul,
+  ol,
+  dd {
+    @apply mb-4 ml-6 p-0;
+  }
+
+  ul > li {
+    @apply list-disc;
+  }
+  ol > li {
+    @apply list-decimal;
+  }
+
+  li {
     ul,
-    ol,
-    dd {
-        @apply mb-4 ml-6 p-0;
+    ol {
+      @apply mb-0;
+    }
+  }
+
+  table {
+    @apply mb-4 block w-full border-collapse border-spacing-0 overflow-auto text-xs md:text-sm;
+
+    th,
+    td {
+      @apply border border-gray-300 px-2.5 py-1.5;
     }
 
-    ul > li {
-        @apply list-disc;
+    th {
+      @apply bg-gray-100;
     }
-    ol > li {
-        @apply list-decimal;
-    }
+  }
 
-    li {
-        ul,
-        ol {
-            @apply mb-0;
-        }
-    }
+  /** 引用 */
+  blockquote {
+    @apply mb-2.5 border-l-4 border-gray-500 p-4;
 
-    table {
-        @apply border-collapse border-spacing-0 mb-4 w-full overflow-auto block text-xs md:text-sm;
-
-        th,
-        td {
-            @apply border border-gray-300 px-2.5 py-1.5;
-        }
-
-        th {
-            @apply bg-gray-100;
-        }
+    p:first-of-type {
+      @apply mt-0;
     }
 
-    /** 引用 */
-    blockquote {
-        @apply border-l-4 border-gray-500 mb-2.5 p-4;
-
-        p:first-of-type {
-            @apply mt-0;
-        }
-
-        p:last-of-type {
-            @apply mb-0;
-        }
-
-        cite {
-            @apply block text-right text-gray-500 mt-1;
-        }
+    p:last-of-type {
+      @apply mb-0;
     }
 
-    pre,
-    code {
-        @apply font-mono;
+    cite {
+      @apply mt-1 block text-right text-gray-500;
     }
+  }
 
-    pre {
-        @apply bg-gray-900 border-0 whitespace-pre-wrap overflow-auto leading-snug text-[0.8rem] p-2.5;
+  pre,
+  code {
+    @apply font-mono;
+  }
 
-        > code {
-            @apply m-0 p-0 whitespace-pre border-0 bg-transparent font-mono;
-        }
+  pre {
+    @apply overflow-auto border-0 bg-gray-900 p-2.5 text-[0.8rem] leading-snug whitespace-pre-wrap;
+
+    > code {
+      @apply m-0 border-0 bg-transparent p-0 font-mono whitespace-pre;
     }
+  }
 
-    code {
-        @apply text-[90%] mx-0.5 px-1.5 bg-gray-100 rounded-sm;
-    }
+  code {
+    @apply mx-0.5 rounded-sm bg-gray-100 px-1.5 text-[90%];
+  }
 
-    hr {
-        @apply w-1/2 border-t border-gray-200 my-8 mx-auto;
-    }
+  hr {
+    @apply mx-auto my-8 w-1/2 border-t border-gray-200;
+  }
 
-    .table-of-contents {
-        @apply p-4 pl-8 my-4 border border-gray-200;
-    }
+  .table-of-contents {
+    @apply my-4 border border-gray-200 p-4 pl-8;
+  }
 }

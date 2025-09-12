@@ -5,40 +5,40 @@
     .entry-header {
         @apply pb-4 mb-4 relative;
 
-        .entry-date {
-            @apply mb-2 text-xs font-bold flex gap-2;
-            a {
-                @apply text-gray-700 no-underline;
-            }
+    .entry-date {
+      @apply mb-2 flex gap-2 text-xs font-bold;
+      a {
+        @apply text-gray-700 no-underline;
+      }
 
-            .date-last-updated {
-                @apply text-gray-500 flex items-center gap-1 ml-0;
-                svg {
-                    @apply inline-block;
-                }
-            }
+      .date-last-updated {
+        @apply ml-0 flex items-center gap-1 text-gray-500;
+        svg {
+          @apply inline-block;
         }
+      }
+    }
 
         .entry-title {
             @apply mb-1 text-2xl text-gray-700;
         }
 
-        .entry-categories {
-            @apply text-sm flex gap-1 flex-wrap;
-            a {
-                @apply text-white bg-primary-light rounded-xs px-1.5 py-0.5 hover:bg-accent transition-all;
-            }
-        }
+    .entry-categories {
+      @apply flex flex-wrap gap-1 text-sm;
+      a {
+        @apply bg-primary-light hover:bg-accent rounded-xs px-1.5 py-0.5 text-white transition-all;
+      }
     }
+  }
 
-    /* 「編集する」ボタン */
-    .entry-header-menu {
-        @apply absolute top-0 right-0 shadow px-2 py-0.5 bg-primary text-white rounded-xs;
-        @apply hover:bg-accent transition-all;
-    }
+  /* 「編集する」ボタン */
+  .entry-header-menu {
+    @apply bg-primary absolute top-0 right-0 rounded-xs px-2 py-0.5 text-white shadow;
+    @apply hover:bg-accent transition-all;
+  }
 
-    .entry-see-more {
-        @apply my-4 text-base font-bold py-1 px-6 text-primary border w-fit text-center rounded-full block mx-auto no-underline;
-        @apply hover:bg-primary hover:text-white transition-all;
-    }
+  .entry-see-more {
+    @apply text-primary mx-auto my-4 block w-fit rounded-full border px-6 py-1 text-center text-base font-bold no-underline;
+    @apply hover:bg-primary transition-all hover:text-white;
+  }
 }

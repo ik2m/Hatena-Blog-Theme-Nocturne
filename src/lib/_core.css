@@ -1,6 +1,6 @@
 html,
 body {
-    @apply font-sans text-gray-900 bg-white leading-relaxed;
+  @apply bg-white font-sans leading-relaxed text-gray-900;
 }
 
 /*a {*/
@@ -21,91 +21,90 @@ body {
 
 /* タイトル下HTML */
 #top-editarea {
-    @apply mb-4;
+  @apply mb-4;
 }
 
 /* urllist module */
 .hatena-urllist {
-    @apply list-none m-0 p-0;
+  @apply m-0 list-none p-0;
 }
 
 .hatena-urllist li {
-    @apply py-2;
+  @apply py-2;
 }
 
 .hatena-urllist li:last-child {
-    @apply pb-0;
+  @apply pb-0;
 }
 
 .hatena-urllist li a {
-    @apply no-underline hover:underline;
+  @apply no-underline hover:underline;
 }
 
 .hatena-urllist .urllist-category-link {
-    @apply text-[0.7rem] py-[0.1em] px-[0.3em];
+  @apply px-[0.3em] py-[0.1em] text-[0.7rem];
 }
 
 .hatena-urllist .urllist-date-link a {
-    @apply text-gray-200;
+  @apply text-gray-200;
 }
 
 .hatena-urllist .urllist-entry-body {
-    @apply mt-1;
+  @apply mt-1;
 }
 
 /* About ページ */
 .page-about .entry-content dt {
-    @apply font-bold border-b border-gray-200 mb-2;
+  @apply mb-2 border-b border-gray-200 font-bold;
 }
 
 .page-about .entry-content dd {
-    @apply ml-0 mb-8;
+  @apply mb-8 ml-0;
 }
 
 /* Archive */
 .archive-header-category {
-    @apply text-center;
+  @apply text-center;
 }
 
 .page-archive {
-    .archive-entries {
-        @apply grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-1;
+  .archive-entries {
+    @apply grid grid-cols-1 gap-1 sm:grid-cols-2 xl:grid-cols-3;
 
-        .archive-entry {
+    .archive-entry {
+      @apply mx-4 mb-12 flex flex-col text-sm text-gray-700;
+      /*@apply leading-snug;*/
 
-            @apply mb-12 mx-4 text-sm flex flex-col text-gray-700;
-            /*@apply leading-snug;*/
-
-            .categories {
-                @apply text-xs flex gap-1 flex-wrap my-1;
-                a {
-                    @apply text-white bg-primary-light rounded-xs px-1.5 py-0.5 hover:bg-accent transition-all;
-                }
-            }
-
-            .archive-date {
-                @apply text-xs;
-            }
-
-            .entry-title {
-                @apply my-1;
-            }
-
-            .entry-thumb {
-                @apply  bg-cover w-full;
-            }
-
-            .entry-description {
-                @apply m-0 text-xs line-clamp-3;
-            }
-
-            .archive-entry-tags {
-                @apply flex gap-1 flex-wrap justify-end;
-            }
-
-            .social-buttons {
-                @apply block mt-1;
-            }
+      .categories {
+        @apply my-1 flex flex-wrap gap-1 text-xs;
+        a {
+          @apply bg-primary-light hover:bg-accent rounded-xs px-1.5 py-0.5 text-white transition-all;
         }
+      }
+
+      .archive-date {
+        @apply text-xs;
+      }
+
+      .entry-title {
+        @apply my-1;
+      }
+
+      .entry-thumb {
+        @apply w-full bg-cover;
+      }
+
+      .entry-description {
+        @apply m-0 line-clamp-3 text-xs;
+      }
+
+      .archive-entry-tags {
+        @apply flex flex-wrap justify-end gap-1;
+      }
+
+      .social-buttons {
+        @apply mt-1 block;
+      }
     }
+  }
 }

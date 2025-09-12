@@ -18,24 +18,28 @@
 @import "tailwindcss";
 
 @theme {
-    --font-sans: 'Helvetica Neue', 'Helvetica', 'Arial','Hiragino Kaku Gothic ProN', 'Hiragino Kaku Gothic Pro', 'Meiryo', 'MS PGothic';
-    /*--font-serif: */
-    --font-mono:'Monaco', 'Consolas', 'Courier New', Courier, monospace, sans-serif;
+  --font-sans:
+    "Helvetica Neue", "Helvetica", Arial, "Noto Sans JP",
+    "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  --font-serif:
+    "Times New Roman", Times, Georgia, "Noto Serif JP", "Hiragino Mincho ProN",
+    "Hiragino Mincho", "MS PMincho", "MS Mincho", serif;
+  --font-mono:
+    "Monaco", "Consolas", "Courier New", Courier, monospace, sans-serif;
 
-    --color-basew: #fff;
-    --color-white-dark: #cccdd8;
+  --color-basew: #fff;
+  --color-white-dark: #cccdd8;
 
-    --color-baseB: #0c0c0c;
-    --color-black-light: #252525;
+  --color-baseB: #0c0c0c;
+  --color-black-light: #252525;
 
-    --color-primary-light: #2870bd;
-    --color-primary: #3050c2;
-    --color-primary-dark: #10127b;
-    /*#7397a6;*/
+  --color-primary-light: #2870bd;
+  --color-primary: #3050c2;
+  --color-primary-dark: #10127b;
+  /*#7397a6;*/
 
-    --color-accent: #f92706;
+  --color-accent: #f92706;
 }
-
 
 /*@import "./lib/_variable";*/
 @import "./lib/_core.css";
