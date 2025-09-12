@@ -1,15 +1,15 @@
 /* ヘッダ */
 #blog-title {
-    @apply py-8 text-center font-serif;
-    @apply md:my-12 md:text-left;
+  @apply py-8 text-center font-serif;
+  @apply md:my-12 md:text-left;
 
-    #title {
-        @apply  m-0 text-2xl md:text-3xl;
-    }
+  #title {
+    @apply m-0 text-2xl md:text-3xl;
+  }
 
-    #blog-description {
-        @apply text-sm mt-2 mb-0;
-    }
+  #blog-description {
+    @apply mt-2 mb-0 text-sm;
+  }
 }
 
 /* ヘッダ画像を設定したとき */

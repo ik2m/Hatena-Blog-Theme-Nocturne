@@ -4,7 +4,7 @@ Boilerplate は、はてなブログのデザインCSSカスタマイズの土�
 
 はてなブログの必要最小限の見た目が調整されています。「オリジナルテーマの制作にチャレンジしたいけど、0から作るのが大変」という方は、このデザインテーマをもとにしてCSSを書くと比較的楽にテーマが作れます。
 
-*Boilerplateは自己責任でご利用ください。お問い合わせははてなブログのサポートフォームではなく、本リポジトリのIssueにお願いします。*
+_Boilerplateは自己責任でご利用ください。お問い合わせははてなブログのサポートフォームではなく、本リポジトリのIssueにお願いします。_
 
 デザインテーマの制作にあたっては下記ヘルプページも参考にしてください。
 
@@ -26,7 +26,7 @@ SCSSで開発する場合は、下記の手順でリポジトリのcloneとモ�
 
 ## モジュールのインストール
 
-``` console
+```console
 $ git clone https://github.com/hatena/Hatena-Blog-Theme-Boilerplate.git
 $ cd Hatena-Blog-Theme-Boilerplate
 $ npm install
@@ -42,24 +42,33 @@ $ npm install
 
 1. テーマの動作確認に使うブログを1つ用意します。（普段お使いのブログとは別にブログを作成してください。）
 2. 1.のブログの「デザイン設定」にアクセスし、「カスタマイズ」タブの「デザインCSS」の内容を下記に置き換えて保存します。
-    ``` css
-    /* Responsive: yes */
-    ```
+   ```css
+   /* Responsive: yes */
+   ```
 3. 1.のブログの「設定」->「詳細設定」にアクセスし、「&lt;head&gt;要素にメタデータを追加」を下記に置き換えて保存します。
-    ``` html
-    <script type="module" src="http://localhost:5173/@vite/client" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="http://localhost:5173/scss/boilerplate.scss" crossorigin="anonymous" />
-    ```
+   ```html
+   <script
+     type="module"
+     src="http://localhost:5173/@vite/client"
+     crossorigin="anonymous"
+   ></script>
+   <link
+     rel="stylesheet"
+     type="text/css"
+     href="http://localhost:5173/scss/boilerplate.scss"
+     crossorigin="anonymous"
+   />
+   ```
 
 つづいて下記のコマンドで、開発サーバーを起動します。`BLOG_DOMAIN_NAME` の部分には、上で用意した動作確認に使うブログのドメイン名 (例: `example.hatenablog.com`) を入力してください。
 
-``` console
+```console
 $ npm start -- BLOG_DOMAIN_NAME
 ```
 
 コマンド実行例:
 
-``` console
+```console
 $ npm start -- example.hatenablog.com
 ```
 
@@ -69,7 +78,7 @@ $ npm start -- example.hatenablog.com
 
 テーマの開発が完了したら、下記のコマンドでSCSSをコンパイルします。コンパイルの結果は `build/boilderplate.css` に出力されます。
 
-``` console
+```console
 $ npm run build
 ```
 
@@ -91,4 +100,4 @@ boilerplate/
 # 過去のバージョン
 
 - <https://github.com/hatena/Hatena-Blog-Theme-Boilerplate-Less>
-    - BoilerplateのLessバージョンです。（開発終了）
+  - BoilerplateのLessバージョンです。（開発終了）

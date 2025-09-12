@@ -1,24 +1,23 @@
 /* footer */
 #footer {
-    @apply py-8 text-center text-xs text-gray-200 bg-primary-light;
+  @apply bg-primary-light py-8 text-center text-xs text-gray-200;
 
-    @apply bg-gradient-to-tr from-primary from-[0\%] via-primary via-[50\%] to-primary-light to-[100\%];
+  @apply from-primary via-primary to-primary-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
 
-    .footer-address {
-        a {
-            @apply flex gap-1 items-center justify-center;
-            img {
-                @apply inline-block;
-            }
-        }
-
-    }
-
+  .footer-address {
     a {
-        @apply text-gray-200;
+      @apply flex items-center justify-center gap-1;
+      img {
+        @apply inline-block;
+      }
     }
+  }
 
-    p {
-        @apply my-2 mx-auto;
-    }
+  a {
+    @apply text-gray-200;
+  }
+
+  p {
+    @apply mx-auto my-2;
+  }
 }
