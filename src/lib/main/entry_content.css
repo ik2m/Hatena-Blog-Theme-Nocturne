@@ -1,6 +1,6 @@
 /* 記事内の書式 */
 .entry-content {
-  @apply text-sm text-gray-700;
+  @apply text-sm/6 text-gray-700;
 
   img,
   video {
@@ -9,6 +9,10 @@
 
   a {
     @apply underline underline-offset-2;
+  }
+
+  p {
+    @apply my-4;
   }
 
   h1,
