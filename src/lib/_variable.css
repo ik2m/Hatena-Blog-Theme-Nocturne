@@ -21,5 +21,14 @@
   --color-primary-dark: #10127b;
   /*#7397a6;*/
 
+  --color-accent-light: #fb5d44;
   --color-accent: #f92706;
+}
+
+@utility bg-primary-gradient {
+  @apply from-primary via-primary to-primary-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
+}
+
+@utility bg-gradient-accent {
+  @apply from-accent via-accent to-accent-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
 }

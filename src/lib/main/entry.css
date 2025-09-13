@@ -26,15 +26,15 @@
     .entry-categories {
       @apply flex flex-wrap gap-1 text-sm;
       a {
-        @apply bg-primary-light hover:bg-accent rounded-xs px-1.5 py-0.5 text-white transition-all;
+        @apply bg-primary hover:bg-accent rounded-xs px-1.5 py-0.5 text-white transition-all;
       }
     }
   }
 
   /* 「編集する」ボタン */
   .entry-header-menu {
-    @apply bg-primary absolute top-0 right-0 rounded-xs px-2 py-0.5 text-white shadow;
-    @apply hover:bg-accent transition-all;
+    @apply bg-primary-gradient absolute top-0 right-0 rounded-xs px-2 py-0.5 text-white shadow;
+    @apply hover:bg-gradient-accent transition-all;
   }
 
   /* 「続きを読む」ボタン */

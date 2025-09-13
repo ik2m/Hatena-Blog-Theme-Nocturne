@@ -1,8 +1,8 @@
 /* footer */
 #footer {
-  @apply bg-primary-light py-8 text-center text-xs text-gray-200;
+  @apply py-8 text-center text-xs text-gray-200;
+  @apply bg-primary-gradient;
 
-  @apply from-primary via-primary to-primary-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
 
   .footer-address {
     a {
