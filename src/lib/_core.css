@@ -1,0 +1,82 @@
+html,
+body {
+  @apply bg-white font-sans leading-relaxed text-gray-900;
+}
+
+/*a {*/
+/*    @apply text-blue-600 hover:text-blue-800;*/
+/*}*/
+
+/*a.keyword {*/
+/*    @apply no-underline border-b border-dotted border-gray-200 text-gray-900;*/
+/*}*/
+
+/*h1, h2, h3, h4, h5, h6 {*/
+/*    @apply text-gray-800 leading-snug;*/
+/*}*/
+
+/*h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {*/
+/*    @apply text-gray-800 no-underline hover:text-blue-800;*/
+/*}*/
+
+/* About ページ */
+.page-about {
+  .entry-content{
+    dt {
+      @apply mb-2 border-b border-gray-200 font-bold;
+    }
+    dd {
+      @apply mb-8 ml-0;
+      .profile-icon {
+        @apply inline-block rounded-full mr-1;
+      }
+    }
+  }
+}
+
+/* Archive */
+.archive-header-category {
+  @apply text-center;
+}
+
+.page-archive {
+  .archive-entries {
+    @apply grid grid-cols-1 gap-1 sm:grid-cols-2 xl:grid-cols-3;
+
+    .archive-entry {
+      @apply mx-4 mb-12 flex flex-col text-sm text-gray-700;
+      /*@apply leading-snug;*/
+
+      .categories {
+        @apply my-1 flex flex-wrap gap-1 text-xs;
+        a {
+          @apply bg-primary-light hover:bg-accent rounded-xs px-1.5 py-0.5 text-white transition-all;
+        }
+      }
+
+      .archive-date {
+        @apply text-xs;
+      }
+
+      .entry-title {
+        @apply my-1;
+      }
+
+      .entry-thumb {
+        @apply w-full bg-cover;
+      }
+
+      .entry-description {
+        @apply m-0 line-clamp-3 text-xs;
+      }
+
+      .archive-entry-tags {
+        @apply flex flex-wrap justify-end gap-1;
+      }
+
+      .social-buttons {
+        @apply mt-1 block;
+      }
+    }
+  }
+}

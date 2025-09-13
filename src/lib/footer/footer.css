@@ -1,0 +1,23 @@
+/* footer */
+#footer {
+  @apply py-8 text-center text-xs text-gray-200;
+  @apply bg-primary-gradient;
+
+
+  .footer-address {
+    a {
+      @apply flex items-center justify-center gap-1;
+      img {
+        @apply inline-block;
+      }
+    }
+  }
+
+  a {
+    @apply text-gray-200;
+  }
+
+  p {
+    @apply mx-auto my-2;
+  }
+}

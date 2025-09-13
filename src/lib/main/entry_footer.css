@@ -1,0 +1,21 @@
+/* 記事下 */
+.entry-footer {
+  .entry-footer-section {
+    @apply mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-600;
+    .entry-footer-time {
+      @apply flex-grow font-bold hover:underline underline-offset-2;
+    }
+
+    .entry-footer-subscribe {
+      @apply m-0 rounded-sm px-1.5 py-1 transition-colors hover:bg-gray-300/50;
+    }
+  }
+
+  .social-buttons {
+    @apply mb-4 flex justify-center gap-1;
+  }
+
+  .google-afc-image {
+    @apply text-center;
+  }
+}

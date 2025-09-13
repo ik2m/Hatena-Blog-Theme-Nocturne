@@ -1,0 +1,26 @@
+/* ヘッダ */
+#blog-title {
+  @apply py-8 text-center font-serif my-12;
+
+  #title {
+    @apply m-0 text-2xl md:text-3xl;
+  }
+
+  #blog-description {
+    @apply mt-2 mb-0 text-sm;
+  }
+}
+
+/* ヘッダ画像を設定したとき */
+/*.header-image-enable {*/
+/*    #blog-title {*/
+/*        @apply my-0 mb-8;*/
+
+/*        #blog-title-inner {*/
+/*            @apply flex flex-row items-center;*/
+/*        }*/
+/*        #blog-title-content {*/
+/*            @apply mx-2.5;*/
+/*        }*/
+/*    }*/
+/*}*/

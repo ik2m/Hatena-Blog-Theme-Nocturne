@@ -1,0 +1,22 @@
+/* container */
+#container,
+#footer {
+  @apply w-full;
+}
+
+#top-box {
+  @apply px-4 mx-auto max-w-[600px] xl:w-[900px];
+}
+/* 2カラムレイアウト */
+#content-inner {
+  @apply flex flex-col items-center justify-start gap-x-20 gap-y-20;
+  @apply xl:flex-row xl:items-start xl:justify-center;
+
+  #wrapper {
+    @apply px-4 w-full max-w-[600px] xl:w-[600px];
+  }
+
+  #box2 {
+    @apply px-4 w-full max-w-[600px] xl:w-[300px] mt-10;
+  }
+}

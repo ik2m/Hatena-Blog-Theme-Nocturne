@@ -1,0 +1,28 @@
+/* Pager */
+.pager {
+  @apply my-8 p-2 flex flex-col gap-1 text-base ;
+  .pager-next,
+  .pager-prev {
+    a {
+      @apply truncate rounded-sm px-1.5 py-1 text-gray-700;
+      @apply transition-colors hover:bg-gray-200/80;
+    }
+  }
+
+  .pager-arrow {
+    @apply inline-block transition-all px-1;
+  }
+  .pager-prev {
+    @apply self-start;
+    &:hover a .pager-arrow {
+    @apply -translate-x-1;
+    }
+  }
+
+  .pager-next{
+    @apply self-end;
+    &:hover a .pager-arrow {
+      @apply translate-x-1;
+    }
+  }
+}
