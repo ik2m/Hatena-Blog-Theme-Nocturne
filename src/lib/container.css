@@ -5,7 +5,8 @@
 }
 /* 2カラムレイアウト */
 #content-inner {
-  @apply flex flex-col items-center justify-center px-4 xl:flex-row;
+  @apply flex flex-col items-center justify-start px-4;
+  @apply xl:flex-row xl:items-start xl:justify-around;
 
   #wrapper {
     @apply max-w-[600px] xl:w-[600px];
