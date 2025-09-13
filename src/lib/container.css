@@ -3,16 +3,20 @@
 #footer {
   @apply w-full;
 }
+
+#top-box {
+  @apply px-4 mx-auto max-w-[600px] xl:w-[900px];
+}
 /* 2カラムレイアウト */
 #content-inner {
-  @apply flex flex-col items-center justify-start px-4 gap-x-20 gap-y-20;
+  @apply flex flex-col items-center justify-start gap-x-20 gap-y-20;
   @apply xl:flex-row xl:items-start xl:justify-center;
 
   #wrapper {
-    @apply max-w-[600px] xl:w-[600px];
+    @apply px-4 max-w-[600px] xl:w-[600px];
   }
 
   #box2 {
-    @apply max-w-[600px] xl:w-[300px] mt-10;
+    @apply px-4 max-w-[600px] xl:w-[300px] mt-10;
   }
 }
