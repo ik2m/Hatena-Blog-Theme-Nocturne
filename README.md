@@ -1,20 +1,11 @@
-# Hatena-Blog-Theme-Boilerplate
+# Hatena-Blog-Theme-Nocturne
 
-Boilerplate は、はてなブログのデザインCSSカスタマイズの土台に適したデザインテーマです。
-
-はてなブログの必要最小限の見た目が調整されています。「オリジナルテーマの制作にチャレンジしたいけど、0から作るのが大変」という方は、このデザインテーマをもとにしてCSSを書くと比較的楽にテーマが作れます。
-
-_Boilerplateは自己責任でご利用ください。お問い合わせははてなブログのサポートフォームではなく、本リポジトリのIssueにお願いします。_
+izumi_ikezakiのはてなブログのテーマ
 
 デザインテーマの制作にあたっては下記ヘルプページも参考にしてください。
 
 - [デザインテーマ制作の手引き - はてなブログ ヘルプ](https://help.hatenablog.com/entry/theme/custom-theme)
 
-# CSSのダウンロード
-
-最新のバージョンから `boilerplate.css` をダウンロードしてください。
-
-- <https://github.com/hatena/Hatena-Blog-Theme-Boilerplate/releases>
 
 # セットアップ
 
@@ -55,7 +46,7 @@ $ npm install
    <link
      rel="stylesheet"
      type="text/css"
-     href="http://localhost:5173/scss/boilerplate.scss"
+     href="http://localhost:5173/src/nocturne.css"
      crossorigin="anonymous"
    />
    ```
@@ -76,28 +67,8 @@ $ npm start -- example.hatenablog.com
 
 ## コンパイル
 
-テーマの開発が完了したら、下記のコマンドでSCSSをコンパイルします。コンパイルの結果は `build/boilderplate.css` に出力されます。
+テーマの開発が完了したら、下記のコマンドでSCSSをコンパイルします。コンパイルの結果は `build/nocturne.css` に出力されます。
 
 ```console
 $ npm run build
 ```
-
-# 構成
-
-```
-boilerplate/
-┣┳ scss/
-┃┗┳ lib/
-┃ ┗ boilerplate.scss
-┗┳ build/
- ┗ boilerplate.css
-```
-
-# ライセンス
-
-このCSSおよびSCSSファイルはMITライセンスのもと自由に複製・再配布できます。 記事本文の書式やコメント欄のスタイルなど、必要な部分だけをコピーして使ってもかまいません。 このデザインテーマをもとにしたテーマの配布も自由です。
-
-# 過去のバージョン
-
-- <https://github.com/hatena/Hatena-Blog-Theme-Boilerplate-Less>
-  - BoilerplateのLessバージョンです。（開発終了）
