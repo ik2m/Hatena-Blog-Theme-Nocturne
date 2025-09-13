@@ -1,4 +1,4 @@
-name: Auto Release on Master Merge
+name: Auto Release with Build ZIP
 
 on:
   push:
@@ -9,19 +9,27 @@ jobs:
   release:
     runs-on: ubuntu-latest
     permissions:
-      contents: write  # タグ付与・Release 作成に必要
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v5
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
 
       - name: Get next vYYYY.N version
         id: bump_version
         run: |
           year=$(date +'%Y')
-
-          # その年の最新タグを取得
           latest_tag=$(git tag --list "v${year}.*" | sort -V | tail -n 1)
-          echo "Latest tag: $latest_tag"
 
           if [ -z "$latest_tag" ]; then
             next_version="v${year}.1"
@@ -41,8 +49,21 @@ jobs:
           git push origin ${{ steps.bump_version.outputs.next_version }}
 
       - name: Create GitHub Release
+        id: release
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.bump_version.outputs.next_version }}
           name: Release ${{ steps.bump_version.outputs.next_version }}
           generate_release_notes: true
+
+      - name: Zip build folder
+        run: |
+          zip -r build.zip build/
+
+      - name: Upload build ZIP to Release
+        uses: actions/upload-release-asset@v2
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: build.zip
+          asset_name: build.zip
+          asset_content_type: application/zip
