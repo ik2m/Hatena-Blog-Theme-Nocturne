@@ -1,4 +1,4 @@
-name: Auto Release with Build ZIP
+name: Auto Release with Build CSS
 
 on:
   pull_request:
@@ -28,16 +28,20 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # 4. ビルド実行 → build/ ディレクトリ生成
+      # 4. ビルド実行 → build/nocturne.css 生成
       - name: Build project
         run: npm run build
 
-      # 5. 次のタグを計算（vYYYY.N形式、年ごとに1からスタート）
+      # 5. リモートタグをフェッチ
+      - name: Fetch all tags
+        run: git fetch --tags
+
+      # 6. 次のタグを計算（vYYYY.N形式、年ごとに1からスタート）
       - name: Get next vYYYY.N version
         id: bump_version
         run: |
           year=$(date +'%Y')
-          latest_tag=$(git tag --list "v${year}.*" | sort -V | tail -n 1)
+          latest_tag=$(git ls-remote --tags origin "refs/tags/v${year}.*" | awk -F/ '{print $3}' | sort -V | tail -n 1)
 
           if [ -z "$latest_tag" ]; then
             next_version="v${year}.1"
@@ -49,7 +53,7 @@ jobs:
 
           echo "next_version=$next_version" >> $GITHUB_OUTPUT
 
-      # 6. Git タグ作成＆push
+      # 7. Git タグ作成＆push（リモートにまだない場合のみ）
       - name: Create Git tag
         run: |
           git config user.name github-actions
@@ -57,8 +61,8 @@ jobs:
           git tag ${{ steps.bump_version.outputs.next_version }}
           git push origin ${{ steps.bump_version.outputs.next_version }}
 
-      # 7. GitHub Release 作成（ZIP を添付）
-      - name: Create GitHub Release with asset
+      # 8. GitHub Release 作成（build/nocturne.css を添付）
+      - name: Create GitHub Release with CSS
         uses: softprops/action-gh-release@v2
         with:
           tag_name: ${{ steps.bump_version.outputs.next_version }}
