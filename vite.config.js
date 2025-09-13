@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {
-      input: ["src/boilerplate.css"],
+      input: ["src/nocturne.css"],
       output: {
         assetFileNames: ({ name }) => name,
       },
