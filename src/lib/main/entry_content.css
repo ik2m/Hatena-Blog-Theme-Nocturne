@@ -24,22 +24,24 @@
     @apply mt-4 mb-3.5;
   }
 
+  /** # */
   h1 {
-    @apply text-4xl md:text-5xl;
+    @apply text-2xl;
   }
 
+  /** ## */
   h2 {
-    @apply text-3xl md:text-4xl;
+    @apply text-xl;
   }
 
-  /** 大見出し */
+  /** 大見出し ### */
   h3 {
-    @apply text-2xl md:text-3xl;
+    @apply text-lg;
   }
 
   /** 中見出し */
   h4 {
-    @apply text-xl;
+    @apply text-lg;
   }
 
   /** 小見出し */
