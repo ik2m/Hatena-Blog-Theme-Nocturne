@@ -19,47 +19,16 @@ body {
 /*    @apply text-gray-800 no-underline hover:text-blue-800;*/
 /*}*/
 
-/* タイトル下HTML */
-#top-editarea {
-  @apply mb-4;
-}
-
-/* urllist module */
-.hatena-urllist {
-  @apply m-0 list-none p-0;
-}
-
-.hatena-urllist li {
-  @apply py-2;
-}
-
-.hatena-urllist li:last-child {
-  @apply pb-0;
-}
-
-.hatena-urllist li a {
-  @apply no-underline hover:underline;
-}
-
-.hatena-urllist .urllist-category-link {
-  @apply px-[0.3em] py-[0.1em] text-[0.7rem];
-}
-
-.hatena-urllist .urllist-date-link a {
-  @apply text-gray-200;
-}
-
-.hatena-urllist .urllist-entry-body {
-  @apply mt-1;
-}
-
 /* About ページ */
-.page-about .entry-content dt {
-  @apply mb-2 border-b border-gray-200 font-bold;
-}
-
-.page-about .entry-content dd {
-  @apply mb-8 ml-0;
+.page-about {
+  .entry-content{
+    dt {
+      @apply mb-2 border-b border-gray-200 font-bold;
+    }
+    dd {
+      @apply mb-8 ml-0;
+    }
+  }
 }
 
 /* Archive */

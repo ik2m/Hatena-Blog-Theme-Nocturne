@@ -34,6 +34,34 @@
   }
 }
 
+/* タイトル下HTML */
+#top-editarea {
+  @apply mb-4;
+}
+
+/* urllist module */
+.hatena-urllist {
+  @apply m-0 list-none p-0;
+  li {
+    @apply py-2;
+  }
+  li:last-child {
+    @apply pb-0;
+  }
+  li a {
+    @apply no-underline hover:underline;
+  }
+  .urllist-category-link {
+    @apply px-[0.3em] py-[0.1em] text-[0.7rem];
+    a {
+      @apply text-gray-200;
+    }
+  }
+  .urllist-entry-body {
+    @apply mt-1;
+  }
+}
+
 /* Search module */
 .hatena-module-search-box {
   .search-form {
