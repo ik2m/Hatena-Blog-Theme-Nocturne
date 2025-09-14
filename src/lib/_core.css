@@ -31,9 +31,21 @@ body {
 }
 
 .page-archive {
-  .archive-heading {
-    @apply text-center text-xl my-6;
+
+  .search-result,
+  .archive-header-category {
+    @apply my-6 flex flex-col;
+
+    .archive-heading {
+      @apply text-center text-xl;
+    }
+
+    .search-result-form {
+      @apply mx-auto;
+    }
   }
+
+
 
   .archive-entries {
     @apply grid grid-cols-1 gap-1 sm:grid-cols-2;
