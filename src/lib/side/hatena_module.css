@@ -37,9 +37,9 @@
     }
 
     .profile-about {
-      @apply my-2 p-2;
+      @apply my-2;
       a {
-        @apply rounded-full border-1 border-gray-600 bg-gray-200/10 px-4 py-1.5 text-gray-600 transition-colors;
+        @apply block rounded-full border-1 border-gray-600 bg-gray-200/10 px-4 py-1.5 text-gray-600 transition-colors;
         @apply hover:bg-gray-600 hover:text-white;
       }
     }
