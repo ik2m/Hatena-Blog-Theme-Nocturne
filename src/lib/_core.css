@@ -1,7 +1,7 @@
 html,
 body {
   /** 初期設定 */
-  @apply font-sans leading-relaxed text-gray-900;
+  @apply font-sans leading-relaxed text-gray-700;
 
   /* 下線のオフセット*/
   @apply underline-offset-2;
@@ -31,11 +31,15 @@ body {
 }
 
 .page-archive {
+  .archive-heading {
+    @apply text-center text-xl my-6;
+  }
+
   .archive-entries {
-    @apply grid grid-cols-1 gap-1 sm:grid-cols-2 xl:grid-cols-3;
+    @apply grid grid-cols-1 gap-1 sm:grid-cols-2;
 
     .archive-entry {
-      @apply mx-4 mb-12 flex flex-col text-sm text-gray-700;
+      @apply mx-4 mb-12 flex flex-col text-sm;
       /*@apply leading-snug;*/
 
       .categories {
