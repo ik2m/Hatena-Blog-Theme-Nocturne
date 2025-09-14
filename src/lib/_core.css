@@ -1,27 +1,14 @@
 html,
 body {
   /** 初期設定 */
-  @apply font-sans leading-relaxed text-gray-900 underline-offset-2;
+  @apply font-sans leading-relaxed text-gray-900;
+
+  /* 下線のオフセット*/
+  @apply underline-offset-2;
 
   /*テキスト入力カーソルの色*/
   @apply caret-accent;
 }
-
-/*a {*/
-/*    @apply text-blue-600 hover:text-blue-800;*/
-/*}*/
-
-/*a.keyword {*/
-/*    @apply no-underline border-b border-dotted border-gray-200 text-gray-900;*/
-/*}*/
-
-/*h1, h2, h3, h4, h5, h6 {*/
-/*    @apply text-gray-800 leading-snug;*/
-/*}*/
-
-/*h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {*/
-/*    @apply text-gray-800 no-underline hover:text-blue-800;*/
-/*}*/
 
 /* About ページ */
 .page-about {
