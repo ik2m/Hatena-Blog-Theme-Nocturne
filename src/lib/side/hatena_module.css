@@ -15,17 +15,16 @@
     @apply flex flex-col items-center;
 
     .profile-icon-link {
-      @apply bg-white shadow p-1 rounded-full;
+      @apply rounded-full bg-white p-1 shadow;
       .profile-icon {
         @apply rounded-full;
       }
     }
 
     .id {
-      a.hatena-id-link{
+      a.hatena-id-link {
         @apply block font-bold;
         @apply hover:text-gray-600;
-
       }
     }
 
@@ -34,11 +33,11 @@
     }
 
     .profile-description {
-      @apply text-xs px-4
+      @apply px-4 text-xs;
     }
 
     .profile-about {
-      @apply p-2 my-2;
+      @apply my-2 p-2;
       a {
         @apply rounded-full border-1 border-gray-600 bg-gray-200/10 px-4 py-1.5 text-gray-600 transition-colors;
         @apply hover:bg-gray-600 hover:text-white;
@@ -74,27 +73,28 @@
   }
 }
 
-/** 最新記事 */
-.hatena-module-recent-entries {
-  .recent-entries {
+/** 最新記事, 注目記事, 関連記事 */
+.hatena-module-recent-entries,
+.hatena-module-entries-access-ranking,
+.hatena-module-related-entries
+{
+  ul.hatena-urllist {
     @apply flex flex-col gap-4;
-    .recent-entries-item-inner {
-      @apply flex flex-row items-center gap-1;
-      .recent-entries-image-link {
-        @apply size-[100px] shrink-0;
-        img.recent-entries-image {
-          @apply size-[100px] bg-cover m-0!;
+    li.urllist-item {
+      .urllist-item-inner {
+        @apply flex flex-row items-center gap-1;
+        .urllist-image-link {
+          @apply size-fit max-w-[120px] shrink-0;
+          img.urllist-image {
+            @apply m-0! size-fit max-w-[120px] bg-cover;
+          }
         }
-      }
-      .recent-entries-title-link {
-        @apply line-clamp-2;
+        .urllist-title-link {
+          @apply line-clamp-2;
+        }
       }
     }
   }
-}
-
-.hatena-module-entries-access-ranking {
-  /** TODO:動作未確認 */
 }
 
 .hatena-module-archive {
