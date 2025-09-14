@@ -51,6 +51,9 @@ body {
 
       .entry-title {
         @apply my-1;
+        a {
+          @apply line-clamp-2
+        }
       }
 
       .entry-thumb {
