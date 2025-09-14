@@ -1,13 +1,15 @@
 @theme {
   --font-sans:
-    "Helvetica Neue", "Helvetica", Arial, "Noto Sans JP",
+    "Noto Sans JP","Helvetica Neue", "Helvetica", Arial,
     "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
   --font-serif:
-    "Times New Roman", Times, Georgia, "Noto Serif JP", "Hiragino Mincho ProN",
+    "Noto Serif JP", "Times New Roman", Times, Georgia, "Hiragino Mincho ProN",
     "Hiragino Mincho", "MS PMincho", "MS Mincho", serif;
   --font-mono:
     "Monaco", "Consolas", "Courier New", Courier, monospace, sans-serif;
 
+
+  --color-gallery : #eaeaee;
   --color-primary-light: #2870bd;
   --color-primary: #192245;
   /*#1c38a6;*/
@@ -33,4 +35,13 @@
 
 @utility bg-accent-gradient {
   @apply from-accent via-accent to-accent-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
+}
+
+/**
+位置をまたいだ共通化系
+ */
+@layer components {
+  .date {
+    @apply font-mono
+  }
 }

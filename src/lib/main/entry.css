@@ -12,9 +12,9 @@
       }
 
       .date-last-updated {
-        @apply ml-0 flex items-center gap-1 text-gray-500;
+        @apply ml-0 flex items-center gap-0.5 text-gray-500;
         svg {
-          @apply inline-block;
+          @apply inline-block size-2.5;
         }
       }
     }
