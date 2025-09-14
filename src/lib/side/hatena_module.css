@@ -34,11 +34,6 @@
   }
 }
 
-/* タイトル下HTML */
-#top-editarea {
-  @apply mb-4;
-}
-
 /* urllist module */
 .hatena-urllist {
   @apply m-0 list-none p-0;
