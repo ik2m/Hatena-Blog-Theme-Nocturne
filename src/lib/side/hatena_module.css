@@ -99,7 +99,7 @@
         }
 
         .urllist-title-link {
-          @apply line-clamp-2;
+          @apply line-clamp-2 hover:underline;
         }
       }
     }

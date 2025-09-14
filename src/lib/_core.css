@@ -1,6 +1,7 @@
 html,
 body {
-  @apply bg-white font-sans leading-relaxed text-gray-900;
+  /** 初期設定 */
+  @apply font-sans leading-relaxed text-gray-900 underline-offset-2;
 }
 
 /*a {*/
@@ -21,14 +22,14 @@ body {
 
 /* About ページ */
 .page-about {
-  .entry-content{
+  .entry-content {
     dt {
       @apply mb-2 border-b border-gray-200 font-bold;
     }
     dd {
       @apply mb-8 ml-0;
       .profile-icon {
-        @apply inline-block rounded-full mr-1;
+        @apply mr-1 inline-block rounded-full;
       }
     }
   }
