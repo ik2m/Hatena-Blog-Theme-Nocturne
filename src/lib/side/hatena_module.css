@@ -76,8 +76,7 @@
 /** 最新記事, 注目記事, 関連記事 */
 .hatena-module-recent-entries,
 .hatena-module-entries-access-ranking,
-.hatena-module-related-entries
-{
+.hatena-module-related-entries {
   ul.hatena-urllist {
     @apply flex flex-col gap-4;
 
@@ -88,14 +87,14 @@
         @apply flex flex-row items-center gap-1;
 
         .urllist-date-link {
-          @apply text-gray-700 text-xs absolute rounded-sm top-0 left-0 z-100 px-1 py-0.5 backdrop-blur bg-white/50 m-1;
+          @apply absolute top-0 left-0 z-100 m-1 rounded-sm bg-white/50 px-1 py-0.5 text-xs text-gray-700 backdrop-blur;
         }
 
         .urllist-image-link {
-          @apply size-fit max-w-[160px] shrink-0;
+          @apply size-fit max-w-[160px] shrink-0 overflow-hidden;
 
           img.urllist-image {
-            @apply m-0! size-fit max-w-[160px] bg-cover;
+            @apply m-0! size-fit max-w-[160px] overflow-hidden bg-cover transition-transform hover:scale-110;
           }
         }
 
