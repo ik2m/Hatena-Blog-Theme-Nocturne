@@ -109,7 +109,7 @@
   }
 
   pre {
-    @apply overflow-auto bg-gray-900 p-2.5 text-xs leading-snug whitespace-pre-wrap rounded-lg;
+    @apply overflow-auto bg-gray-900 p-2.5 text-xs leading-snug whitespace-pre-wrap rounded;
 
     > code {
       @apply m-0 border-0 bg-transparent p-0 font-mono whitespace-pre;
