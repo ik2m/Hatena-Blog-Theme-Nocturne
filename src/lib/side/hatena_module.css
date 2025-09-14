@@ -76,7 +76,21 @@
 
 /** 最新記事 */
 .hatena-module-recent-entries {
-  /** TODO:動作未確認 */
+  .recent-entries {
+    @apply flex flex-col gap-4;
+    .recent-entries-item-inner {
+      @apply flex flex-row items-center gap-1;
+      .recent-entries-image-link {
+        @apply size-[100px] shrink-0;
+        img.recent-entries-image {
+          @apply size-[100px] bg-cover m-0!;
+        }
+      }
+      .recent-entries-title-link {
+        @apply line-clamp-2;
+      }
+    }
+  }
 }
 
 .hatena-module-entries-access-ranking {
