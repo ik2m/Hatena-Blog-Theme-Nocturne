@@ -1,7 +1,6 @@
-html,
 body {
   /** 初期設定 */
-  @apply font-sans leading-relaxed text-gray-700;
+  @apply font-sans leading-relaxed text-gray-700 text-sm;
 
   /* 下線のオフセット*/
   @apply underline-offset-2;
@@ -9,7 +8,6 @@ body {
   /*テキスト入力カーソルの色*/
   @apply caret-accent;
 }
-
 /* About ページ */
 .page-about {
   .entry-content {
