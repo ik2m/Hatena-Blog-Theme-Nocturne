@@ -2,7 +2,7 @@
 .hatena-module {
   @apply mb-20 text-sm sm:text-xs;
   .hatena-module-title {
-    @apply mb-2 border-b border-gray-200 pb-1 font-serif text-2xl font-extralight;
+    @apply mb-2 border-b border-gray-200 pb-1 font-serif text-2xl font-thin;
     a {
       @apply no-underline hover:underline;
     }
@@ -11,25 +11,38 @@
 
 /** プロフィール */
 .hatena-module-profile {
-  .profile-icon-link {
-    .profile-icon {
-      @apply float-left mr-2.5 mb-2.5 rounded-full;
+  .hatena-module-body {
+    @apply flex flex-col items-center;
+
+    .profile-icon-link {
+      @apply bg-white shadow p-1 rounded-full;
+      .profile-icon {
+        @apply rounded-full;
+      }
     }
-  }
-  .id {
-    @apply mb-2 block font-bold;
-  }
-  .profile-activities {
-    @apply text-xs;
-  }
-  .profile-description {
-    p {
-      @apply mt-0;
+
+    .id {
+      a.hatena-id-link{
+        @apply block font-bold;
+        @apply hover:text-gray-600;
+
+      }
     }
-  }
-  .profile-about {
-    a{
-      @apply no-underline hover:underline;
+
+    .profile-activities {
+      @apply text-xs;
+    }
+
+    .profile-description {
+      @apply text-xs px-4
+    }
+
+    .profile-about {
+      @apply p-2 my-2;
+      a {
+        @apply rounded-full border-1 border-gray-600 bg-gray-200/10 px-4 py-1.5 text-gray-600 transition-colors;
+        @apply hover:bg-gray-600 hover:text-white;
+      }
     }
   }
 }
@@ -44,7 +57,7 @@
   }
   .search-module-button {
     @apply mr-0.5 h-6 w-6 cursor-pointer overflow-hidden text-transparent opacity-50 hover:opacity-85;
-    @apply bg-svg-search
+    @apply bg-svg-search;
   }
 }
 
@@ -60,7 +73,6 @@
     }
   }
 }
-
 
 /** 最新記事 */
 .hatena-module-recent-entries {
@@ -91,7 +103,9 @@
   ul.hatena-urllist {
     li {
       @apply mb-2.5;
-      .hatena-id-icon { @apply rounded-full inline-block;}
+      .hatena-id-icon {
+        @apply inline-block rounded-full;
+      }
       & > a {
         @apply no-underline hover:underline;
       }
