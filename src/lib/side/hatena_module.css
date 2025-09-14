@@ -2,7 +2,7 @@
 .hatena-module {
   @apply mb-20 text-sm sm:text-xs;
   .hatena-module-title {
-    @apply mb-2 border-b border-gray-200 pb-1 font-serif text-2xl font-thin;
+    @apply mb-2 border-b border-gray-200 pb-1 text-xl tracking-wider;
     a {
       @apply no-underline hover:underline;
     }
