@@ -15,7 +15,7 @@
     @apply flex flex-col items-center;
 
     .profile-icon-link {
-      @apply rounded-full bg-white p-1 shadow;
+      @apply rounded-full bg-white p-1 shadow mb-3;
       .profile-icon {
         @apply rounded-full;
       }
