@@ -2,6 +2,9 @@ html,
 body {
   /** 初期設定 */
   @apply font-sans leading-relaxed text-gray-900 underline-offset-2;
+
+  /*テキスト入力カーソルの色*/
+  @apply caret-accent;
 }
 
 /*a {*/

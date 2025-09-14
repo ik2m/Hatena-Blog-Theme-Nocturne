@@ -106,8 +106,22 @@
   }
 }
 
+/** 月別アーカイブ */
 .hatena-module-archive {
-  /** TODO:動作未確認 */
+  .archive-module-calendar {
+    select.archive-module-calendar-selector {
+      @apply bg-gray-200 py-1 rounded border-1 border-gray-300;
+    }
+    .calendar-day {
+      @apply p-0.5 ;
+      span, a{
+        @apply px-0.5 py-1;
+      }
+      a {
+        @apply bg-primary/20 text-primary rounded-sm font-bold;
+      }
+    }
+  }
 }
 
 /** カテゴリー */
