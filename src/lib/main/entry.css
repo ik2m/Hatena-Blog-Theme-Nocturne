@@ -26,7 +26,7 @@
     .entry-categories {
       @apply flex flex-wrap gap-1 text-sm;
       a {
-        @apply bg-primary hover:bg-accent rounded-xs px-1.5 py-0.5 text-white transition-all;
+        @apply bg-ghost/50 hover:bg-accent rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
       }
     }
   }
@@ -39,7 +39,7 @@
 
   /* 「続きを読む」ボタン */
   .entry-see-more {
-    @apply text-primary bg-gray-700/5 border-primary/20 mx-auto my-8 block w-fit rounded-full border px-4 py-1 text-center text-base font-bold no-underline tracking-widest;
+    @apply text-primary border-primary/20 mx-auto my-8 block w-fit rounded-full border bg-gray-700/5 px-4 py-1 text-center text-base font-bold tracking-widest no-underline;
     @apply hover:bg-primary border-primary transition-all hover:text-white;
   }
 
@@ -56,14 +56,13 @@
       }
     }
 
-
-
     .google-afc-image {
       @apply text-center;
     }
   }
 
-  .entry-header,.entry-footer {
+  .entry-header,
+  .entry-footer {
     /** ソーシャルボタンはヘッダーにもフッターにも置ける **/
     .social-buttons {
       @apply mb-4 flex justify-center gap-1;
