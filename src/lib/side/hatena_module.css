@@ -80,15 +80,25 @@
 {
   ul.hatena-urllist {
     @apply flex flex-col gap-4;
+
     li.urllist-item {
+      @apply relative;
+
       .urllist-item-inner {
         @apply flex flex-row items-center gap-1;
+
+        .urllist-date-link {
+          @apply text-gray-700 text-xs absolute rounded-sm top-0 left-0 z-100 px-1 py-0.5 backdrop-blur bg-white/50 m-1;
+        }
+
         .urllist-image-link {
-          @apply size-fit max-w-[120px] shrink-0;
+          @apply size-fit max-w-[160px] shrink-0;
+
           img.urllist-image {
-            @apply m-0! size-fit max-w-[120px] bg-cover;
+            @apply m-0! size-fit max-w-[160px] bg-cover;
           }
         }
+
         .urllist-title-link {
           @apply line-clamp-2;
         }
