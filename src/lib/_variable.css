@@ -31,6 +31,6 @@
   @apply from-primary via-primary to-primary-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
 }
 
-@utility bg-gradient-accent {
+@utility bg-accent-gradient {
   @apply from-accent via-accent to-accent-light bg-gradient-to-tr from-[0\%] via-[50\%] to-[100\%];
 }

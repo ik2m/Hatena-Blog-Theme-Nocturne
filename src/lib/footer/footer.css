@@ -1,7 +1,7 @@
 /* footer */
 #footer {
   @apply py-8 text-center text-xs text-gray-200;
-  @apply bg-primary-gradient;
+  @apply bg-primary;
 
 
   .footer-address {
