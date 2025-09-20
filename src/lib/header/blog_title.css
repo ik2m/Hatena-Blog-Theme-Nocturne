@@ -1,17 +1,25 @@
 /* ヘッダ */
 #blog-title {
-  @apply py-8 text-center font-serif my-12;
+  @apply py-8 text-center  my-4;
+  @apply md:py-12;
 
   #title {
-    @apply m-0 text-2xl md:text-3xl;
+    @apply m-0 text-2xl  font-serif font-thin tracking-widest;
+    @apply md:text-3xl;
   }
 
   #blog-description {
-    @apply mt-2 mb-0 text-sm;
+    @apply mt-2 mb-0 text-xs tracking-wider;
+    &::before {
+      @apply content-['―'];
+    }
+    &::after {
+      @apply content-['―'];
+    }
   }
 }
 
-/* ヘッダ画像を設定したとき */
+/* ヘッダ画像を設定したとき TODO:動作未確認 */
 /*.header-image-enable {*/
 /*    #blog-title {*/
 /*        @apply my-0 mb-8;*/

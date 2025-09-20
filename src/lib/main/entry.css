@@ -12,9 +12,9 @@
       }
 
       .date-last-updated {
-        @apply ml-0 flex items-center gap-1 text-gray-500;
+        @apply ml-0 flex items-center gap-0.5 text-gray-500;
         svg {
-          @apply inline-block;
+          @apply inline-block size-2.5;
         }
       }
     }
@@ -26,20 +26,46 @@
     .entry-categories {
       @apply flex flex-wrap gap-1 text-sm;
       a {
-        @apply bg-primary hover:bg-accent rounded-xs px-1.5 py-0.5 text-white transition-all;
+        @apply bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
       }
     }
   }
 
   /* 「編集する」ボタン */
   .entry-header-menu {
-    @apply bg-primary-gradient absolute top-0 right-0 rounded-xs px-2 py-0.5 text-white shadow;
-    @apply hover:bg-gradient-accent transition-all;
+    @apply bg-primary absolute top-0 right-0 rounded-xs px-2 py-0.5 text-white shadow;
+    @apply hover:bg-accent transition-all;
   }
 
   /* 「続きを読む」ボタン */
   .entry-see-more {
-    @apply text-primary bg-gray-700/5 border-primary/20 mx-auto my-8 block w-fit rounded-full border px-4 py-1 text-center text-base font-bold no-underline tracking-widest;
+    @apply text-primary border-primary/20 mx-auto my-8 block w-fit rounded-full border bg-gray-700/5 px-4 py-1 text-center text-base font-bold tracking-widest no-underline;
     @apply hover:bg-primary border-primary transition-all hover:text-white;
+  }
+
+  /* 記事下 */
+  .entry-footer {
+    .entry-footer-section {
+      @apply mb-2 flex flex-wrap items-center justify-between gap-2 text-xs text-gray-600;
+      .entry-footer-time {
+        @apply flex-grow font-bold hover:underline;
+      }
+
+      .entry-footer-subscribe {
+        @apply m-0 rounded-sm px-1.5 py-1 transition-colors hover:bg-gray-300/50;
+      }
+    }
+
+    .google-afc-image {
+      @apply text-center;
+    }
+  }
+
+  .entry-header,
+  .entry-footer {
+    /** ソーシャルボタンはヘッダーにもフッターにも置ける **/
+    .social-buttons {
+      @apply mb-4 flex justify-center gap-1;
+    }
   }
 }

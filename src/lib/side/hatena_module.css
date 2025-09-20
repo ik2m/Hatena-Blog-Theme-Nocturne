@@ -1,68 +1,52 @@
-/* サイドバーモジュール */
+/** サイドバーモジュール */
 .hatena-module {
-  @apply mb-12 text-sm sm:text-xs;
+  @apply mb-20 text-sm sm:text-xs;
   .hatena-module-title {
-    @apply mb-2 border-b border-gray-200 pb-1 font-serif text-2xl font-extralight;
+    @apply mb-2 border-b border-gray-200 pb-1 text-xl tracking-wider;
     a {
       @apply no-underline hover:underline;
     }
   }
 }
 
-/* Profile module */
+/** プロフィール */
 .hatena-module-profile {
-  .profile-icon-link {
-    .profile-icon {
-      @apply float-left mr-2.5 mb-2.5 rounded-full;
+  .hatena-module-body {
+    @apply flex flex-col items-center;
+
+    .profile-icon-link {
+      @apply rounded-full bg-white p-1 shadow mb-3;
+      .profile-icon {
+        @apply rounded-full;
+      }
     }
-  }
-  .id {
-    @apply mb-2 block font-bold;
-  }
-  .profile-activities {
-    @apply text-xs;
-  }
-  .profile-description {
-    p {
-      @apply mt-0;
+
+    .id {
+      a.hatena-id-link {
+        @apply block font-bold;
+        @apply hover:text-gray-600;
+      }
     }
-  }
-  .profile-about {
-    a{
-      @apply no-underline hover:underline;
+
+    .profile-activities {
+      @apply text-xs;
+    }
+
+    .profile-description {
+      @apply px-4 text-xs;
+    }
+
+    .profile-about {
+      @apply my-2;
+      a {
+        @apply block rounded-full border-1 border-gray-600 bg-gray-200/10 px-4 py-1.5 text-gray-600 transition-colors;
+        @apply hover:bg-gray-600 hover:text-white;
+      }
     }
   }
 }
 
-/* タイトル下HTML */
-#top-editarea {
-  @apply mb-4;
-}
-
-/* urllist module */
-.hatena-urllist {
-  @apply m-0 list-none p-0;
-  li {
-    @apply py-2;
-  }
-  li:last-child {
-    @apply pb-0;
-  }
-  li a {
-    @apply no-underline hover:underline;
-  }
-  .urllist-category-link {
-    @apply px-[0.3em] py-[0.1em] text-[0.7rem];
-    a {
-      @apply text-gray-200;
-    }
-  }
-  .urllist-entry-body {
-    @apply mt-1;
-  }
-}
-
-/* Search module */
+/** 検索 */
 .hatena-module-search-box {
   .search-form {
     @apply box-border flex w-full items-center rounded border border-gray-200;
@@ -72,6 +56,112 @@
   }
   .search-module-button {
     @apply mr-0.5 h-6 w-6 cursor-pointer overflow-hidden text-transparent opacity-50 hover:opacity-85;
-    @apply bg-svg-search
+    @apply bg-svg-search;
   }
+}
+
+/** リンク */
+.hatena-module-links {
+  ul.hatena-urllist {
+    @apply m-0 list-none p-0;
+    li {
+      @apply py-2;
+      a {
+        @apply no-underline hover:underline;
+      }
+    }
+  }
+}
+
+/** 最新記事, 注目記事, 関連記事 */
+.hatena-module-recent-entries,
+.hatena-module-entries-access-ranking,
+.hatena-module-related-entries {
+  ul.hatena-urllist {
+    @apply flex flex-col gap-4;
+
+    li.urllist-item {
+      @apply relative;
+
+      .urllist-item-inner {
+        @apply items-center gap-1 relative;
+
+        .urllist-date-link {
+          @apply absolute top-0 left-0 z-100 m-1 rounded-sm bg-white/50 px-1 py-0.5 text-xs text-gray-700 backdrop-blur;
+        }
+
+        .urllist-image-link {
+          @apply mr-1 mb-1 float-left block size-fit max-w-[160px] shrink-0 overflow-hidden;
+
+          img.urllist-image {
+            @apply m-0! size-fit max-w-[160px] overflow-hidden bg-cover transition-transform hover:scale-110;
+          }
+        }
+
+        .urllist-title-link {
+          @apply line-clamp-2 hover:underline;
+        }
+        .urllist-categories {
+          @apply flex flex-wrap text-sm;
+          a {
+            @apply bg-ghost/50 hover:bg-primary rounded-xs px-1.5 py-0.5 text-gray-700 transition-all hover:text-white;
+          }
+        }
+      }
+    }
+  }
+}
+
+/** 月別アーカイブ */
+.hatena-module-archive {
+  .archive-module-calendar {
+    select.archive-module-calendar-selector {
+      @apply bg-gray-200 py-1 rounded border-1 border-gray-300;
+    }
+    .calendar-day {
+      @apply p-0.5 ;
+      span, a{
+        @apply px-0.5 py-1;
+      }
+      a {
+        @apply bg-primary/20 text-primary rounded-sm font-bold;
+      }
+    }
+  }
+}
+
+/** カテゴリー */
+.hatena-module-category {
+  /** TODO:動作未確認 */
+  ul.hatena-urllist {
+    li {
+      @apply mb-2.5;
+    }
+  }
+}
+
+/** 最近のコメント */
+.hatena-module-recent-comments {
+  /** TODO:動作未確認 */
+  ul.hatena-urllist {
+    li {
+      @apply mb-2.5;
+      .hatena-id-icon {
+        @apply inline-block rounded-full;
+      }
+      & > a {
+        @apply no-underline hover:underline;
+      }
+    }
+  }
+}
+
+/** 参加グループ */
+.hatena-module-html {
+  /** TODO:動作未確認 */
+}
+
+/** 執筆者リスト */
+.hatena-module-authors-lis {
+  /** TODO:動作未確認 */
 }

@@ -4,7 +4,7 @@
   .pager-next,
   .pager-prev {
     a {
-      @apply truncate rounded-sm px-1.5 py-1 text-gray-700;
+      @apply block truncate rounded-sm px-3 py-2 text-gray-700;
       @apply transition-colors hover:bg-gray-200/80;
     }
   }

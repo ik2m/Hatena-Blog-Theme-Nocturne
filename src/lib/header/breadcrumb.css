@@ -5,6 +5,6 @@
     @apply text-gray-500/60;
   }
   a {
-    @apply text-gray-700;
+    @apply text-gray-700 hover:underline;
   }
 }
